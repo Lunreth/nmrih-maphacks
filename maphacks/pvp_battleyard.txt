@@ -1,0 +1,24 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"pre_entities"
+	{
+		$edit_all
+    {
+			"classname"  "info_player_deathmatch"
+			"keyvalues"
+			{
+        "classname"   "info_player_nmrih"
+        "default_spawn"  "1"
+			}
+		}
+		$edit_all
+    {
+			"classname"  "prop_physics_respawnable"
+			"keyvalues"
+			{
+        "classname"   "prop_physics_multiplayer"
+			}
+		}
+	}
+}

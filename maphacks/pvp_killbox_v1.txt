@@ -1,0 +1,78 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"pre_entities"
+	{
+    $remove { "id" "253069" }
+    $edit_all
+    {
+			"classname"  "info_player_counterterrorist"
+			"keyvalues"
+			{
+        "classname"   "info_player_nmrih"
+        "default_spawn"  "1"
+			}
+		}
+		$edit_all
+    {
+			"classname"  "info_player_terrorist"
+			"keyvalues"
+			{
+        "classname"   "info_player_nmrih"
+        "default_spawn"  "1"
+			}
+		}
+		$edit_all
+    {
+			"classname"  "info_player_deathmatch"
+			"keyvalues"
+			{
+        "classname"   "info_player_nmrih"
+        "default_spawn"  "1"
+			}
+		}
+	}
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"origin" "2206 -170 645"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "2258 -1467 517"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "1111 -89 37"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "2018 -2079 37"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "85 -154 517"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "70 -1984 645"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "583 -1874 1109"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "1341 -103 1669"
+			"angles" "0 0 0"
+		}
+	}
+}

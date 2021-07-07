@@ -1,0 +1,71 @@
+"MapHack"
+{
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"origin" "590 417 129"
+			"angles" "0 225 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "715 -45 380"
+			"angles" "0 200 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "560 -736 89"
+			"angles" "0 135 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-85 -612 17"
+			"angles" "0 45 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-839 -59 385"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-220 216 137"
+			"angles" "0 158 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-240 -356 129"
+			"angles" "0 195 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-1112 -321 128"
+			"angles" "0 285 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-1225 -351 257"
+			"angles" "0 315 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-1012 209 147"
+			"angles" "0 345 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-600 -80 97"
+			"angles" "0 45 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-923 -543 129"
+			"angles" "0 60 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-168 -264 16"
+			"angles" "0 83 0"
+		}
+	}
+}

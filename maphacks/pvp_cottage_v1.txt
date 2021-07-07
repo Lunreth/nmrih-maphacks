@@ -1,0 +1,65 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"pre_entities"
+	{
+    $remove { "id" "408489" }
+		$edit_all
+    {
+			"classname"  "info_player_deathmatch"
+			"keyvalues"
+			{
+        "classname"   "info_player_nmrih"
+        "default_spawn"  "1"
+			}
+		}
+	}
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"origin" "205 1222 -22"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "382 -135 157"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-1020 -228 205"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-82 297 12"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "621 377 153"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "421 -269 289"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "954 265 -22"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-993 795 -19"
+			"angles" "0 0 0"
+		}
+		"info_player_nmrih"
+		{
+			"origin" "-892 -834 -17"
+			"angles" "0 0 0"
+		}
+	}
+}

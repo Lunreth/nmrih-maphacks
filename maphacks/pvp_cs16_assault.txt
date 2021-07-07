@@ -1,0 +1,83 @@
+"MapHack"
+{
+	"entities"
+	{
+		"info_player_nmrih"
+		{
+			"origin" "836.21 -1250.92 -751.96"
+			"angles" "0 86.27 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "-772.64 -1312.69 -751.96"
+			"angles" "0 81.71 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "-738.42 840.05 -751.96"
+			"angles" "0 15.12 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "53.88 559.99 -623.96"
+			"angles" "0 87.29 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "182.25 1582.54 -623.96"
+			"angles" "0 -13.02 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "212.02 1202.43 -415.96"
+			"angles" "0 110.33 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "1560.09 292.25 -751.96"
+			"angles" "0 169.64 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "1358.06 1208.93 -719.96"
+			"angles" "0 -91.02 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "1321.21 -208.34 -751.96"
+			"angles" "0 170.90 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "-144.00 -418.35 -751.96"
+			"angles" "0 162.29 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "-43.66 543.20 -751.96"
+			"angles" "0 169.02 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "1135.98 1896.10 -415.96"
+			"angles" "0 -155.19 0"
+		}
+
+		"info_player_nmrih"
+		{
+			"origin" "-1543.22 -816.65 -735.96"
+			"angles" "0 0.11 0"
+		}
+	}
+}
