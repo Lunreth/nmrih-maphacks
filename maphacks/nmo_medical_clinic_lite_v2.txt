@@ -1,0 +1,350 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+  "pre_entities"
+  {
+    $modify
+		{
+			"match"
+			{
+				"id" "56443"
+			}
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnTrigger" "PlayerStart1,InputDisable,,600,-1"
+          "OnTrigger" "room1_bullsye,Wake,,0,-1"
+          "OnTrigger" "room1_case,PickRandom,,0,-1"
+          "OnTrigger" "obj_bf_1,ObjectiveComplete,,0,-1"
+				}
+			}
+		}
+  }
+	"entities"
+	{
+		// LOTS OF MODIFY
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "first_floor_walkers1"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "35"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "first_floor_walkers2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "40"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "second_floor_walkers"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "100"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "third_floor_walkers"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "90"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "resp_t"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "first_floor_walkers_new2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "first_floor_walkers_new3"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ext_runners_t"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ext_kidtrap_t"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t3"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t3"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t4"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t4"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t5"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t5"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t6"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t6"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t7"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t7"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t8"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t8"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t9"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t9"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_runner_t10"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_kid_t10"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+			}
+		}
+	}
+}

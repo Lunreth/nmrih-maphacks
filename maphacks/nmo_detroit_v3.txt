@@ -1,0 +1,168 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // HOOKING EVENTS
+  "events"
+  {
+		"EventOutput1"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj6"
+			"output"	"OnObjectiveBegin"
+		}
+		
+		"EventOutput2"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"missiya_musorka"
+			"output"	"OnObjectiveBegin"
+		}
+  }
+  
+  // ENTITY EDITOR
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"classname"   "info_player_nmrih"
+			}
+			"replace"
+			{
+        "targetname"   "default_spawn_point"
+			}
+		}
+		
+    "info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point1"
+			"origin"	"3264 6912 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"me_hatchet"
+		{
+			"origin"	"3264 6912 2550"
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point2"
+			"origin"	"3200 6912 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"me_hatchet"
+		{
+			"origin"	"3200 6912 2550"
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point3"
+			"origin"	"3136 6912 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"me_hatchet"
+		{
+			"origin"	"3136 6912 2550"
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point4"
+			"origin"	"3072 6912 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"me_hatchet"
+		{
+			"origin"	"3072 6912 2550"
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point5"
+			"origin"	"3264 6976 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"me_hatchet"
+		{
+			"origin"	"3264 6976 2550"
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point6"
+			"origin"	"3200 7040 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point7"
+			"origin"	"3136 7104 2450"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+	}
+	// EVENT MANAGER
+	"EventOutput1"
+	{
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "default_spawn_point"
+			}
+			"replace"
+			{
+        "origin" "3200 7096 2450"
+        "spawnflags"  "1"
+			}
+		}
+	}
+	"EventOutput2"
+	{
+		$fire { "targetname" "extra_spawn_point1" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point2" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point3" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point4" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point5" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point6" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point7" "input" "InputEnable" }
+		$fire { "targetname" "extra_spawn_point1" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point2" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point3" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point4" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point5" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point6" "input" "RespawnPlayers" }
+		$fire { "targetname" "extra_spawn_point7" "input" "RespawnPlayers" }
+	}
+}

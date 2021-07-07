@@ -1,0 +1,32 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "trap_doors_1"
+			}
+			"replace"
+			{
+        "speed"    "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "trap_doors_2"
+			}
+			"replace"
+			{
+        "speed"    "15"
+			}
+		}
+	}
+}

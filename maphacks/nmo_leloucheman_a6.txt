@@ -1,0 +1,98 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page1"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page2"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page3"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page4"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page5"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page6"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page7"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page8"
+			}
+			"replace"
+			{
+        "modelscale" "1.5"
+			}
+		}
+	}
+}

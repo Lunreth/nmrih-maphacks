@@ -1,0 +1,249 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+	{
+    "ObjectiveOutput1"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj_6"
+			"output"	"OnObjectiveBegin"
+		}
+		"ObjectiveOutput2"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj_8"
+			"output"	"OnObjectiveBegin"
+		}
+	}
+  // ENTITY EDITOR
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "Firstfloorspawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "180"
+        "MaxLiveChildren" "30"
+        "spawnflags"      "48"
+			}
+		}
+  }
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"-256 -607 37"
+			"angles"	"0 90 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "0"
+			}
+		}
+		// LOTS OF MODIFY
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiesewerrtemplatemaker3"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "20"
+        "MaxLiveChildren" "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiestoilet1"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+        "MaxLiveChildren" "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Roof_Runners_Template"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+        "MaxLiveChildren" "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "lab_walkers1"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "20"
+        "MaxLiveChildren" "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "lab_walkers2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "30"
+        "MaxLiveChildren" "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "lab_walkers_group"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "25"
+        "MaxLiveChildren" "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "NakazanieTemplate2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "15"
+        "MaxLiveChildren" "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiebeforesewerrtemplatemaker"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+        "MaxLiveChildren" "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiespawnerinside"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "30"
+        "MaxLiveChildren" "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiesecondfloortemplatemaker"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "20"
+        "MaxLiveChildren" "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiesewerrtemplatemaker"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "40"
+        "MaxLiveChildren" "40"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombiesewer2rtemplatemaker2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "50"
+        "MaxLiveChildren" "50"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Firstfloorspawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "180"
+        "MaxLiveChildren" "30"
+        "spawnflags"      "48"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Toilet_Inf_Spawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "40"
+        "MaxLiveChildren" "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "KidsSpawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "10"
+        "MaxLiveChildren" "10"
+			}
+		}
+	}
+	"ObjectiveOutput1"
+	{
+    $fire { "targetname"	"extra_spawn_point" "input" "InputDisable" }
+	}
+	"ObjectiveOutput2"
+	{
+    $fire { "targetname"	"extra_spawn_point" "input" "InputDisable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "InputEnable" }
+    $fire { "targetname"	"PlayerSpawnObj7" "input" "RespawnPlayers" }
+	}
+}

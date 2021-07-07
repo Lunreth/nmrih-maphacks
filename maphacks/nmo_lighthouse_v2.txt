@@ -1,0 +1,131 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+  "pre_entities"
+	{
+    $remove { "targetname" "mountain_zombies_ext" }
+    $remove { "targetname" "mountain_spawner_3" }
+    $remove_all
+		{
+			"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+		$remove_all
+		{
+			"model" "models/props_borealis/bluebarrel002.mdl"
+		}
+    $remove { "id" "14761" }
+    $remove { "id" "14758" }
+    $remove { "id" "14760" }
+    $remove { "id" "14784" }
+    $remove { "id" "14783" }
+    $remove { "id" "14759" }
+    $remove { "id" "14781" }
+    $remove { "id" "14761" }
+    $remove { "id" "12733" }
+    $remove { "id" "12734" }
+    $remove { "id" "13397" }
+    $remove { "id" "14762" }
+    $remove { "id" "14763" }
+    $remove { "id" "14777" }
+    $remove { "id" "14778" }
+		$modify
+		{
+      "match"
+			{
+				"classname"  "trigger_progress_use"
+			}
+			"replace"
+			{
+        "use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"  "trigger_progress_use"
+			"keyvalues"
+			{
+				"use_length"    "4"
+			}
+		}
+	}
+	"entities"
+	{
+    $remove { "targetname" "mountain_zombies_ext" }
+    $remove { "targetname" "mountain_spawner_3" }
+    $remove_all
+		{
+			"model" "models/props_junk/wood_pallet001a.mdl"
+		}
+		$remove_all
+		{
+			"model" "models/props_borealis/bluebarrel002.mdl"
+		}
+    $remove { "id" "14761" }
+    $remove { "id" "14758" }
+    $remove { "id" "14760" }
+    $remove { "id" "14784" }
+    $remove { "id" "14783" }
+    $remove { "id" "14759" }
+    $remove { "id" "14781" }
+    $remove { "id" "14761" }
+    $remove { "id" "12733" }
+    $remove { "id" "12734" }
+    $remove { "id" "13397" }
+    $remove { "id" "14762" }
+    $remove { "id" "14763" }
+    $remove { "id" "14777" }
+    $remove { "id" "14778" }
+		"me_sledge"
+		{
+			"origin"	"1152 -1963 -1000"
+		}
+		"me_wrench"
+		{
+			"origin"	"1052 -1963 -1000"
+		}
+		"me_wrench"
+		{
+			"origin"	"1252 -1963 -1000"
+		}
+		"me_wrench"
+		{
+			"origin"	"1152 -1863 -1000"
+		}
+		"me_machete"
+		{
+			"origin"	"1536 5902 -840"
+		}
+		"me_machete"
+		{
+			"origin"	"1532 5902 -840"
+		}
+		"me_machete"
+		{
+			"origin"	"1540 5902 -840"
+		}
+		"me_machete"
+		{
+			"origin"	"1540 5906 -840"
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"  "trigger_progress_use"
+			}
+			"replace"
+			{
+        "use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"  "trigger_progress_use"
+			"keyvalues"
+			{
+				"use_length"    "4"
+			}
+		}
+	}
+}

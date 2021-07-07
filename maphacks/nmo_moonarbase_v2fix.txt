@@ -1,0 +1,442 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"launch_button"
+			"output"	"OnPressed"
+		}
+  }
+  "pre_entities"
+  {
+    $edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+    $edit
+		{
+			"targetname" "2"
+			"keyvalues"
+			{
+				"origin" "1503 1511 599"
+			}
+		}
+		$edit
+		{
+			"targetname" "4"
+			"keyvalues"
+			{
+				"origin" "4726 2608 532"
+			}
+		}
+		$edit
+		{
+			"targetname" "5"
+			"keyvalues"
+			{
+				"origin" "6321 1449 1425"
+			}
+		}
+		$edit
+		{
+			"targetname" "6"
+			"keyvalues"
+			{
+				"origin" "2542 1680 623"
+			}
+		}
+		$edit
+		{
+			"targetname" "8"
+			"keyvalues"
+			{
+				"origin" "-1168 3136 8384"
+			}
+		}
+		$edit
+		{
+			"targetname" "3"
+			"keyvalues"
+			{
+				"origin" "4326 2770 458"
+			}
+		}
+		$edit
+		{
+			"targetname" "1"
+			"keyvalues"
+			{
+				"origin" "4326 2770 458"
+			}
+		}
+    $edit
+		{
+			"targetname" "o_key8"
+			"keyvalues"
+			{
+				"origin" "1932 -480 1424"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"objective_glow1"
+			"origin"	"4326 2770 458"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/crate_anim.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"objective_glow2"
+			"origin"	"1503 1511 599"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/crate_anim.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"objective_glow4"
+			"origin"	"4672 2620 534"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/crate_anim.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"objective_glow5"
+			"origin"	"6336 1468 1429"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/crate_anim.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"reactor_glow5"
+			"origin"	"1152 700 590"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/crate_anim.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+		"prop_dynamic_override"
+		{
+			"targetname"	"objective_glow6"
+			"origin"	"2528 1664 640"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props/objectives/cj_foodcrate.mdl"
+				"rendermode"  "2"
+				"renderamt"   "1"
+				"solid"     "0"
+			}
+		}
+  }
+	"entities"
+	{
+    $edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+    $edit
+		{
+			"targetname" "o_key8"
+			"keyvalues"
+			{
+				"origin" "1932 -480 1424"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "1"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "objective_glow1"
+				"GlowEntity5Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "2"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "objective_glow2"
+				"GlowEntity5Color"  "0 255 0"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "5"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "laboratory_keyboardbutton"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "reactor_button"
+				"GlowEntity6Color"  "0 255 0"
+				"GlowEntity7Name"   "objective_glow5"
+				"GlowEntity7Color"  "0 255 0"
+				"GlowEntity8Name"   "reactor_glow5"
+				"GlowEntity8Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "4"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "keycard_button"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "objective_glow4"
+				"GlowEntity6Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "6"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "dish_button"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "objective_glow6"
+				"GlowEntity6Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "7"
+			}
+			"replace"
+			{
+        "GlowEntity1Name"   "o_key1"
+				"GlowEntity1Color"  "0 255 0"
+				"GlowEntity2Name"   "o_key2"
+				"GlowEntity2Color"  "0 255 0"
+				"GlowEntity3Name"   "o_key3"
+				"GlowEntity3Color"  "0 255 0"
+				"GlowEntity4Name"   "o_key4"
+				"GlowEntity4Color"  "0 255 0"
+				"GlowEntity5Name"   "o_key5"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "o_key6"
+				"GlowEntity6Color"  "0 255 0"
+				"GlowEntity7Name"   "o_key7"
+				"GlowEntity7Color"  "0 255 0"
+				"GlowEntity8Name"   "o_key8"
+				"GlowEntity8Color"  "0 255 0"
+				"GlowEntity9Name"   "o_key9"
+				"GlowEntity9Color"  "0 255 0"
+				"GlowEntity10Name"   "o_key10"
+				"GlowEntity10Color"  "0 255 0"
+				"GlowEntity11Name"   "o_key11"
+				"GlowEntity11Color"  "0 255 0"
+				"GlowEntity12Name"   "o_key12"
+				"GlowEntity12Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_1"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_2"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_3"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_4"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_5"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_6"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_7"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_8"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "random_walker_9"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "25"
+        "MaxNPCCount"   "25"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "puzzle_counter"
+			}
+			"replace"
+			{
+        "max"   "1"
+			}
+		}
+		$remove { "targetname" "butt_1" }
+		$remove { "targetname" "butt_1spr" }
+		$remove { "targetname" "butt_2" }
+		$remove { "targetname" "butt_2spr" }
+		$remove { "targetname" "butt_3" }
+		$remove { "targetname" "butt_3spr" }
+	}
+	"EventOutput"
+	{
+    $fire { "targetname" "9" "input" "ObjectiveCompleteTriggerExtraction" "value" "win" }
+	}
+}

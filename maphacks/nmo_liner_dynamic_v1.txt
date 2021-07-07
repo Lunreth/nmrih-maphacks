@@ -1,0 +1,55 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		// LOTS OF MODIFY
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "muchwalkersss1"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "muchwalkersss3"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "muchwalkersss4"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "muchwalkers1121"
+			}
+			"replace"
+			{
+        "MaxNPCCount"     "2"
+			}
+		}
+	}
+}

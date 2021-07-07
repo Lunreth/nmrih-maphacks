@@ -1,0 +1,10 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $remove { "targetname" "buildrunner" }
+    $remove_all { "classname" "buildrun" }
+	}
+}

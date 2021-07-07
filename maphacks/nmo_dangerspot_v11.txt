@@ -1,0 +1,174 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"   "ambbreak"
+			}
+			"replace"
+			{
+        "health"   "0"
+        "spawnflags"   "1"
+			}
+		}
+		$edit
+		{
+			"targetname"	"ambbreak"
+			"keyvalues"
+			{
+        "health"        "0"
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "last_break"
+			}
+			"replace"
+			{
+        "health"   "0"
+        "spawnflags"   "1"
+			}
+		}
+		$edit
+		{
+			"targetname"	"last_break"
+			"keyvalues"
+			{
+        "health"        "0"
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "spawn2"
+			}
+			"replace"
+			{
+        "default_spawn" "0"
+        "spawnflags"    "1"
+			}
+		}
+		$edit_all
+		{
+			"targetname"	"spawn2"
+			"keyvalues"
+			{
+        "default_spawn" "0"
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "spawn3"
+			}
+			"replace"
+			{
+        "default_spawn" "0"
+        "spawnflags"    "1"
+			}
+		}
+		$edit_all
+		{
+			"targetname"	"spawn3"
+			"keyvalues"
+			{
+        "default_spawn" "0"
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "BrigeTZT"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "2"
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"   "ambbreak"
+			}
+			"replace"
+			{
+        "health"   "0"
+        "spawnflags"   "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "last_break"
+			}
+			"replace"
+			{
+        "health"   "0"
+        "spawnflags"   "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "spawn2"
+			}
+			"replace"
+			{
+        "default_spawn" "0"
+        "spawnflags"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "spawn3"
+			}
+			"replace"
+			{
+        "default_spawn" "0"
+        "spawnflags"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "BrigeTZT"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"   "2"
+			}
+		}
+		"prop_physics"
+		{
+			"targetname"	"prop_oil_drum"
+			"origin"	    "-5230 209 -1176"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props_c17/oildrum001.mdl"
+			}
+		}
+  }
+}

@@ -1,0 +1,37 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "OutputFix"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj_7_gasolinedestroying"
+			"output"	"OnObjectiveBegin"
+	}
+  "pre_entities"
+  {
+    $remove_connections { "targetname" "obj7_gasolinedestroying" }
+    $edit
+    {
+        "targetname"  "obj_7_gasolinedestroying"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnObjectiveEnd" "spawn_b,InputDisable,,0,-1"
+              "OnObjectiveBegin" "spawn_a,InputDisable,,0,-1"
+            }
+        }
+    }
+  }
+	"OutputFix"
+	{
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+		$fire { "targetname"	"spawn_a" "input" "InputDisable" }
+	}
+}

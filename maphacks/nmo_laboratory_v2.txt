@@ -1,0 +1,78 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"64 -464 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"160 -464 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"64 -370 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"160 -370 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"32 0 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"96 0 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"160 0 -470"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+	}
+}

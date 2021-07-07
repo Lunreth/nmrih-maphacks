@@ -1,0 +1,56 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"pre_entities"
+	{
+		$edit
+		{
+			"id" "237021"
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnStartTouch" "!activator,AddOutput,modelindex 318,0,-1"
+				}
+			}
+		}
+		$edit
+		{
+			"id" "202770"
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnStartTouch" "!activator,AddOutput,modelindex 319,0,-1"
+				}
+			}
+		}
+	}
+	"entities"
+	{
+		$edit
+		{
+			"id" "237021"
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnStartTouch" "!activator,AddOutput,modelindex 318,0,-1"
+				}
+			}
+		}
+		$edit
+		{
+			"id" "202770"
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnStartTouch" "!activator,AddOutput,modelindex 319,0,-1"
+				}
+			}
+		}
+	}
+}

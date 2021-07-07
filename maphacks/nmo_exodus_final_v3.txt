@@ -1,0 +1,60 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "zombie1_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombie2_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+  }
+	"entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombie1_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "zombie2_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+	}
+}

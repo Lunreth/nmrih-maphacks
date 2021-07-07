@@ -1,0 +1,80 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"boutton_acenseur3"
+			"output"	"OnPressed"
+		}
+  }
+  "pre_entities"
+  {
+    $remove_connections { "targetname" "boutton_acenseur3" }
+    $edit
+    {
+        "id"  "306234"
+        "keyvalues"
+        {
+            "targetname"  "final_brush"
+            "classname"   "func_nmrih_extractionzone"
+            "spawnflags"  "1"
+        }
+    }
+    $edit
+    {
+        "targetname"  "extract_fin5"
+        "keyvalues"
+        {
+            "extractzone"  "final_brush"
+        }
+    }
+    $edit
+    {
+        "targetname"  "boutton_acenseur3"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnPressed" "boutton_acenseur3,Lock,,0,-1"
+              "OnPressed" "acenseur3,Open,,0,-1"
+              "OnPressed" "son_acenseur3,PlaySound,,0,-1"
+              "OnPressed" "instant_final_trigger,Enable,,0,1"
+              "OnPressed" "game_state,ExtractAllPlayers,,0.1,1"
+              "OnPressed" "game_state,ExtractPlayer,,0.2,1"
+            }
+        }
+    }
+  }
+  "entities"
+  {
+    $remove { "targetname" "trigger_players_morts" }
+    "nmrih_game_state"
+		{
+			"targetname"	"game_state"
+			"origin"	"3742 -2216 -76"
+		}
+		"instant_trigger"
+		{
+			"targetname"	"instant_final_trigger"
+			"origin"	"3944 -2232 -40"
+			"keyvalues"
+			{
+				"radius"			"128"
+				"StartDisabled"	"1"
+				"connections"
+        {
+           "OnTrigger" "game_state,ExtractPlayer,,0,-1"
+        }
+			}
+		}
+  }
+	"EventOutput"
+	{
+    $fire { "targetname" "instant_final_trigger" "input" "Enable" }
+    $fire { "targetname" "game_state" "input" "ExtractAllPlayers" }
+    $fire { "targetname" "game_state" "input" "ExtractPlayer" }
+	}
+}

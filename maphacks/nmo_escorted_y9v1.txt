@@ -1,0 +1,16 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+		// SPAWNS A SHAMBLER
+		"npc_nmrih_shamblerzombie"
+		{
+			"targetname"	"shambler_house"
+			"origin"	    "-2328 -2144 64"
+			"angles"	    "0 0 0"
+		}
+	}
+}

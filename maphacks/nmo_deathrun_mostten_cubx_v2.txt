@@ -1,0 +1,48 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+    $edit
+    {
+        "targetname"  "trap_1_3"
+        "keyvalues"
+        {
+            "StartDisabled" "1"
+        }
+    }
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "trap_1_3"
+			}
+			"replace"
+			{
+        "StartDisabled"     "1"
+			}
+		}
+	}
+	"entities"
+	{
+    $edit
+    {
+        "targetname"  "trap_1_3"
+        "keyvalues"
+        {
+            "StartDisabled" "1"
+        }
+    }
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "trap_1_3"
+			}
+			"replace"
+			{
+        "StartDisabled"     "1"
+			}
+		}
+	}
+}

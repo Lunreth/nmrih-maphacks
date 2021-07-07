@@ -1,0 +1,67 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+		// EDIT ALL PROP PHYSICS
+		$edit
+		{
+			"targetname" "nmrih_extract_point"
+			"keyvalues"
+			{
+				"extracttime"	  "70"
+			}
+		}
+		$edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		// MODIFY OBJECTIVE GLOW
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "obj2_break_rock"
+			}
+			"replace"
+			{
+        "GlowEntity9Name"   "TNT"
+				"GlowEntity9Color"  "0 255 255"
+				"GlowEntity8Name"   "rock"
+				"GlowEntity8Color"  "255 255 255"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "obj4_break_rock"
+			}
+			"replace"
+			{
+        "GlowEntity9Name"   "TNT2"
+				"GlowEntity9Color"  "0 255 255"
+				"GlowEntity8Name"   "rock1"
+				"GlowEntity8Color"  "255 255 255"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+	}
+}

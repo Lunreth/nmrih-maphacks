@@ -1,0 +1,172 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "EntityOutput"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"ttt_count_obj"
+			"output"	"OnHitMax"
+	}
+	"pre_entities"
+	{
+    $edit_all
+    {
+			"classname"  "prop_physics_multiplayer"
+			"keyvalues"
+			{
+        "classname"   "prop_physics"
+        "spawnflags"  "8"
+			}
+		}
+	}
+	"entities"
+	{
+    $edit { "targetname"  "bomb_obj_inv_1" "keyvalues" { "rendermode"   "0"} }
+    $edit { "targetname"  "bomb_obj_inv_2" "keyvalues" { "rendermode"   "0"} }
+    $edit { "targetname"  "bomb_obj_inv_3" "keyvalues" { "rendermode"   "0"} }
+    $edit { "targetname"  "bomb_obj_inv_4" "keyvalues" { "rendermode"   "0"} }
+    $edit { "targetname"  "bomb_obj_inv_5" "keyvalues" { "rendermode"   "0"} }
+    $edit { "targetname"  "bomb_obj_inv_6" "keyvalues" { "rendermode"   "0"} }
+    $remove_connections { "id" "266056" }
+    $edit_all
+		{
+			"classname"  "func_door"
+			"keyvalues"
+			{
+        "dmg"   "1"
+			}
+		}
+    $edit
+		{
+			"targetname"  "math_counter_1"
+			"keyvalues"
+			{
+        "min"   "0"
+        "max"   "99"
+			}
+		}
+		$edit
+		{
+			"id"  "2754922"
+			"keyvalues"
+			{
+        "targetname"   "bomb_obj1"
+			}
+		}
+		$edit_field { "id" "2754922"  "fieldname" "m_iName" "value" "bomb_obj1" }
+		$edit
+		{
+			"id"  "2778564"
+			"keyvalues"
+			{
+        "targetname"   "bomb_obj2"
+			}
+		}
+		$edit_field { "id" "2778564"  "fieldname" "m_iName" "value" "bomb_obj2" }
+		$edit
+		{
+			"id"  "2755002"
+			"keyvalues"
+			{
+        "targetname"   "bomb_obj3"
+			}
+		}
+		$edit_field { "id" "2755002"  "fieldname" "m_iName" "value" "bomb_obj3" }
+		$edit
+		{
+			"id"  "314218"
+			"keyvalues"
+			{
+        "targetname"   "bomb_obj4"
+			}
+		}
+		$edit_field { "id" "314218"  "fieldname" "m_iName" "value" "bomb_obj4" }
+		$edit
+		{
+			"targetname"  "filter_explosive_1"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj1"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_1"  "fieldname" "m_iFilterName" "value" "bomb_obj1" }
+		$edit
+		{
+			"targetname"  "filter_explosive_2"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj2"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_2"  "fieldname" "m_iFilterName" "value" "bomb_obj2" }
+		$edit
+		{
+			"targetname"  "filter_explosive_3"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj3"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_3"  "fieldname" "m_iFilterName" "value" "bomb_obj3" }
+		$edit
+		{
+			"targetname"  "filter_explosive_4"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj4"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_4"  "fieldname" "m_iFilterName" "value" "bomb_obj4" }
+		$edit
+		{
+			"targetname"  "filter_explosive_5"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj1"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_5"  "fieldname" "m_iFilterName" "value" "bomb_obj1" }
+		$edit
+		{
+			"targetname"  "filter_explosive_6"
+			"keyvalues"
+			{
+        "filtername"   "bomb_obj2"
+			}
+		}
+		$edit_field { "targetname" "filter_explosive_6"  "fieldname" "m_iFilterName" "value" "bomb_obj2" }
+		$edit
+		{
+			"targetname"  "Evacution"
+			"keyvalues"
+			{
+        "GlowEntity1Color"  "0 255 0"
+				"GlowEntity2Color"  "255 0 0"
+				"GlowEntity3Color"  "0 0 255"
+				"GlowEntity4Color"  "255 255 0"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Color"  "255 0 0"
+				"GlowEntity7Color"  "0 0 255"
+				"GlowEntity8Color"  "255 255 0"
+				"GlowEntity9Color"  "0 255 0"
+				"GlowEntity10Color"  "255 0 0"
+        "GlowEntity1Name"   "bomb_obj1"
+        "GlowEntity2Name"   "bomb_obj2"
+        "GlowEntity3Name"   "bomb_obj3"
+        "GlowEntity4Name"   "bomb_obj4"
+        "GlowEntity5Name"   "trig_1"
+        "GlowEntity6Name"   "trig_2"
+        "GlowEntity7Name"   "trig_3"
+        "GlowEntity8Name"   "trig_4"
+        "GlowEntity9Name"   "trig_5"
+        "GlowEntity10Name"   "trig_6"
+			}
+		}
+	}
+	"EntityOutput"
+	{
+    $fire { "targetname"	"Evacution" "input" "ObjectiveComplete" }
+    $fire { "targetname"	"wall_laser_hurt" "input" "Kill" }
+    $fire { "targetname"	"wall_laser" "input" "Kill" }
+	}
+}

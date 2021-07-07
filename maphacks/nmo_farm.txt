@@ -1,0 +1,25 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "EntityOutput"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj_truck_boundary"
+			"output"	"OnObjectiveBegin"
+	}
+	"pre_entities"
+	{
+    $edit { "id"  "85141" "keyvalues" { "StartDisabled"   "1"} }
+    $edit { "id"  "85141" "keyvalues" { "targetname"   "final_trigger"} }
+	}
+	"entities"
+	{
+    $edit { "id"  "85141" "keyvalues" { "StartDisabled"   "1"} }
+    $edit { "id"  "85141" "keyvalues" { "targetname"   "final_trigger"} }
+	}
+	"EntityOutput"
+	{
+    $fire { "targetname"	"final_trigger" "input" "Enable" }
+    $fire { "targetname"	"final_trigger" "input" "InputEnable" }
+	}
+}

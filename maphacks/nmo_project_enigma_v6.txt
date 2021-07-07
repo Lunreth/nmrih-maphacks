@@ -1,0 +1,195 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		$edit
+		{
+			"targetname"  "sA_zm"
+			"keyvalues"
+			{
+				"MaxNPCCount"    "1000"
+				"MaxLiveChildren" "2"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "sA_zm"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "1000"
+				"MaxLiveChildren" "2"
+			}
+		}
+		$edit
+		{
+			"targetname"  "sA2_zm"
+			"keyvalues"
+			{
+				"MaxNPCCount"    "2000"
+				"MaxLiveChildren" "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "sA2_zm"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2000"
+				"MaxLiveChildren" "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam1"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam2"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam3"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam4"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam5"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam6"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "cam7"
+			}
+			"replace"
+			{
+        "speed"    "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal6"
+			}
+			"replace"
+			{
+        "use_length"    "3"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal5"
+			}
+			"replace"
+			{
+        "use_length"    "3"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal4"
+			}
+			"replace"
+			{
+        "use_length"    "3"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal3"
+			}
+			"replace"
+			{
+        "health"    "250"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal2"
+			}
+			"replace"
+			{
+        "use_length"    "3"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "underground_gate_terminal1"
+			}
+			"replace"
+			{
+        "use_length"    "4"
+			}
+		}
+	}
+}

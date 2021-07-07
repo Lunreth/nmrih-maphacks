@@ -1,0 +1,51 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ARREGLAR PARTE DE EXTINGUIR FUEGO
+  "events"
+  {
+    "EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"FireTrigger3"
+			"output"	"OnTrigger"
+		}
+  }
+	"entities"
+	{
+    $modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+        "spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$edit_all
+		{
+			"classname" "npc_template_maker"
+			"keyvalues"
+			{
+        "MaxNPCCount"     "30"
+        "MaxLiveChildren" "30"
+			}
+		}
+	}
+	"EventOutput"
+	{
+    $fire { "targetname" "f1" "input" "Kill" }
+	}
+}

@@ -1,0 +1,42 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"pre_entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"id"  "15839"
+			}
+			"replace"
+			{
+        "solid"     "0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"id"  "15840"
+			}
+			"replace"
+			{
+        "solid"     "0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"id"  "15991"
+			}
+			"replace"
+			{
+        "solid"     "0"
+			}
+		}
+	}
+}

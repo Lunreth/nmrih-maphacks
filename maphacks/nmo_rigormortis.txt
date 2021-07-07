@@ -1,0 +1,96 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"classname"   "nmrih_objective_boundary"
+				"targetname"  "fuel_obj"
+			}
+			"replace"
+			{
+        "GlowEntity6Name"   "fuel_mdl"
+				"GlowEntity6Color"  "0 128 0"
+				"GlowEntity7Name"   "fuel_mdl"
+				"GlowEntity7Color"  "0 128 0"
+				"GlowEntity8Name"   "fuel_mdl"
+				"GlowEntity8Color"  "0 128 0"
+        "GlowEntity9Name"   "fuel_mdl"
+				"GlowEntity9Color"  "0 128 0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "prop_physics"
+			}
+			"replace"
+			{
+				"classname"   "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname"   "prop_ragdoll"
+			}
+			"replace"
+			{
+				"classname"   "prop_ragdoll_multiplayer"
+			}
+		}
+	}
+	"entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"classname"   "nmrih_objective_boundary"
+				"targetname"  "fuel_obj"
+			}
+			"replace"
+			{
+        "GlowEntity6Name"   "fuel_mdl"
+				"GlowEntity6Color"  "0 128 0"
+				"GlowEntity7Name"   "fuel_mdl"
+				"GlowEntity7Color"  "0 128 0"
+				"GlowEntity8Name"   "fuel_mdl"
+				"GlowEntity8Color"  "0 128 0"
+        "GlowEntity9Name"   "fuel_mdl"
+				"GlowEntity9Color"  "0 128 0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "prop_physics"
+			}
+			"replace"
+			{
+				"classname"   "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname"   "prop_ragdoll"
+			}
+			"replace"
+			{
+				"classname"   "prop_ragdoll_multiplayer"
+			}
+		}
+	}
+}

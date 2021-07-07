@@ -1,0 +1,43 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+    $edit_all
+		{
+			"classname"   "prop_physics"
+			"keyvalues"
+			{
+				"classname"   "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		
+		$modify
+		{
+			"match"
+			{
+				"classname"   "prop_ragdoll"
+			}
+			"replace"
+			{
+				"classname"   "prop_ragdoll_multiplayer"
+			}
+		}
+		
+		$modify
+		{
+			"match"
+			{
+				"classname" "prop_physics"
+			}
+			"replace"
+			{
+				"classname"   "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // HOOKING EVENTS
+  "events"
+  {
+    "EventOutput"
+		{
+			"type"	      "EVENT_OUTPUT"
+			"targetname"	"Activate"
+			"output"	    "OnPressed"
+		}
+  }
+  // ENTITY EDITOR
+	"pre_entities"
+	{
+		$edit
+		{
+			"targetname"  "fear_tv"
+			"keyvalues"
+			{
+				"spawnflags"  "260"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "fear_tv"
+			}
+			"replace"
+			{
+        "spawnflags" "260"
+			}
+		}
+	}
+	"entities"
+	{
+    $edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"parentname"  "fear_tv"
+			}
+			"replace"
+			{
+        "Solidity" "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "fear_tv"
+			}
+			"replace"
+			{
+        "solid" "0"
+			}
+		}
+    "game_text"
+		{
+			"targetname"	"sacrifice_text"
+			"origin"	"-128 128 96"
+			"keyvalues"
+			{
+				"message"			"You sacrificed yourself to bring back your allies and items"
+				"color"       "255 255 0"
+				"color2"      "255 255 0"
+				"holdtime"    "8"
+				"x"           "-1"
+				"y"           "0.3"
+				"spawnflags"  "1"
+			}
+		}
+	}
+	// EVENT MANAGER
+	"EventOutput"
+	{
+		$fire { "targetname" "sacrifice_text" "input" "Display" }
+	}
+}

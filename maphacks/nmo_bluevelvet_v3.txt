@@ -1,0 +1,44 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+  }
+	"entities"
+	{
+		// EDIT ALL PROP PHYSICS
+		$edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+	}
+}

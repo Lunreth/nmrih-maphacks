@@ -1,0 +1,94 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "SpawnEnable1"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj2"
+			"output"	"OnObjectiveBegin"
+	}
+	"SpawnEnable2"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj5"
+			"output"	"OnObjectiveBegin"
+	}
+	"SpawnEnable3"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj8"
+			"output"	"OnObjectiveBegin"
+	}
+	"TriggerPass"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj7"
+			"output"	"OnObjectiveBegin"
+	}
+	"pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "hops_trig"
+			}
+			"replace"
+			{
+        "StartDisabled"     "1"
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "hops_trig"
+			}
+			"replace"
+			{
+        "StartDisabled"     "1"
+			}
+		}
+  }
+	"EntityOutput1"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj4"
+			"output"	"OnObjectiveBegin"
+	}
+	"EntityOutput2"
+	{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"obj6"
+			"output"	"OnObjectiveBegin"
+	}
+	"SpawnEnable1"
+	{
+		$fire { "targetname"	"defaultspawn" "input" "InputEnable" }
+	}
+	"SpawnEnable2"
+	{
+		$fire { "targetname"	"Player_spawn_mid" "input" "InputEnable" }
+	}
+	"SpawnEnable3"
+	{
+		$fire { "targetname"	"Player_spawn_late" "input" "InputEnable" }
+	}
+	"TriggerPass"
+	{
+		$fire { "targetname"	"hops_trig" "input" "Enable" }
+	}
+	"EntityOutput1"
+	{
+		$remove_all { "targetname" "defaultspawn" }
+	}
+	"EntityOutput2"
+	{
+		$remove_all { "targetname" "Player_spawn_mid" }
+	}
+}

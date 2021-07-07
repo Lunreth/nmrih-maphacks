@@ -1,0 +1,108 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+			"match"
+			{
+				"targetname" "timer_trap"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "30"
+				"LowerRandomBound" "25"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timer_horde_final"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "14"
+				"LowerRandomBound" "10"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timerfinal1"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "21"
+				"LowerRandomBound" "14"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timerfinal2"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "20"
+				"LowerRandomBound" "15"
+			}
+		}
+  }
+	"entities"
+	{
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timer_trap"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "30"
+				"LowerRandomBound" "25"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timer_horde_final"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "14"
+				"LowerRandomBound" "10"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timerfinal1"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "21"
+				"LowerRandomBound" "14"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "timerfinal2"
+			}
+			"replace"
+			{
+				"UpperRandomBound" "20"
+				"LowerRandomBound" "15"
+			}
+		}
+	}
+}

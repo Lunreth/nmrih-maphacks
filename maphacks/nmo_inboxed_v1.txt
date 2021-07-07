@@ -1,0 +1,474 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    // REMOVE OLD CONNECTIONS
+    $remove_connections { "targetname" "level_8_easy" }
+    
+    // RENAME DEFAULT SPAWN POINTS
+    $modify
+		{
+      "match"
+			{
+				"classname"  "info_player_nmrih"
+			}
+			"replace"
+			{
+        "targetname"  "default_spawn_point"
+			}
+		}
+    
+    // ADD THEM AGAIN PLUS NEW ONES
+    $edit
+    {
+        "targetname"  "level_8_easy"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnTrigger" "level_fade,Fade,,15,-1"
+              "OnTrigger" "level_8_go1,Open,,15,-1"
+              "OnTrigger" "level_8_go2,Open,,15,-1"
+              "OnTrigger" "level_8_go3,Open,,15,-1"
+              "OnTrigger" "level_8_go4,Open,,15,-1"
+              "OnTrigger" "level_sound,PlaySound,,15,-1"
+              "OnTrigger" "extra_spawn_point,InputEnable,,0,1"
+              "OnTrigger" "default_spawn_point,InputDisable,,0,1"
+              "OnTrigger" "extra_spawn_point,RespawnPlayers,,0.1,1"
+            }
+        }
+    }
+  }
+  // ENTITY EDITOR
+	"entities"
+	{
+    "info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1009 -7632 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1041 -7632 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1073 -7632 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1009 -7664 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1041 -7664 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"1073 -7664 2180"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+				"spawnflags"        "3"
+			}
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"240 270 524"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"574 880 944"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"656 -2700 920"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"656 -2650 920"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"656 -2600 920"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"656 -2550 920"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-320 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-280 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_runnerzombie"
+		{
+			"origin"	"-240 -5714 1882"
+			"targetname"  "maphack_runner"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_runnerzombie"
+		{
+			"origin"	"-200 -5714 1882"
+			"targetname"  "maphack_runner"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-160 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-120 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-80 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-40 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"0 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"40 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"80 -5714 1882"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4550 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4600 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4650 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4750 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4800 3330"
+			"targetname"  "maphack_shambler"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4850 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"5200 -4900 3330"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -7960 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_runnerzombie"
+		{
+			"origin"	"4930 -8000 2616"
+			"targetname"  "maphack_runner"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_runnerzombie"
+		{
+			"origin"	"4930 -8040 2616"
+			"targetname"  "maphack_runner"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8080 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8120 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8160 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8240 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8280 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8320 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8360 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4930 -8400 2616"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4636 -8228 3292"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4636 -8180 3292"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4636 -8260 3292"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"4636 -8300 3292"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_runnerzombie"
+		{
+			"origin"	"4700 -8228 3292"
+			"targetname"  "maphack_runner"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+	}
+}

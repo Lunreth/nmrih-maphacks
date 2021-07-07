@@ -1,0 +1,141 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		// EDIT ALL PROP PHYSICS
+		$edit_all
+		{
+			"classname" "prop_physics"
+			"keyvalues"
+			{
+				"classname"	  "prop_physics_multiplayer"
+				"physicsmode" "1"
+			}
+		}
+		
+		$edit
+		{
+			"targetname"  "razor_beam_3"
+			"keyvalues"
+			{
+				"damage"    "50"
+			}
+		}
+		$edit
+		{
+			"targetname"  "razor_beam_hurt_3"
+			"keyvalues"
+			{
+				"damage"    "75"
+			}
+		}
+		
+		$edit
+		{
+			"targetname"  "razor_beam_2"
+			"keyvalues"
+			{
+				"damage"    "50"
+			}
+		}
+		$edit
+		{
+			"targetname"  "razor_beam_hurt_2"
+			"keyvalues"
+			{
+				"damage"    "75"
+			}
+		}
+		
+		$edit
+		{
+			"targetname"  "razor_beam_1"
+			"keyvalues"
+			{
+				"damage"    "50"
+			}
+		}
+		$edit
+		{
+			"targetname"  "razor_beam_hurt_1"
+			"keyvalues"
+			{
+				"damage"    "75"
+			}
+		}
+		
+		// LOTS OF MODIFY
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_3"
+			}
+			"replace"
+			{
+        "damage"    "50"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_hurt_3"
+			}
+			"replace"
+			{
+				"damage"    "75"
+			}
+		}
+		
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_2"
+			}
+			"replace"
+			{
+        "damage"    "50"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_hurt_2"
+			}
+			"replace"
+			{
+				"damage"    "75"
+			}
+		}
+		
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_1"
+			}
+			"replace"
+			{
+        "damage"    "50"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "razor_beam_hurt_1"
+			}
+			"replace"
+			{
+				"damage"    "75"
+			}
+		}
+	}
+}

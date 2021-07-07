@@ -1,0 +1,34 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"classname"   "logic_timer"
+				"targetname"  "zombie_01_timer"
+			}
+			"replace"
+			{
+        "UpperRandomBound"   "8"
+        "LowerRandomBound"   "7"
+			}
+		}
+		
+		$modify
+		{
+      "match"
+			{
+				"classname"   "logic_timer"
+				"targetname"  "zombie_02_timer"
+			}
+			"replace"
+			{
+        "UpperRandomBound"   "7"
+        "LowerRandomBound"   "6"
+			}
+		}
+	}
+}

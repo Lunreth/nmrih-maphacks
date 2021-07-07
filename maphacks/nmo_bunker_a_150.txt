@@ -1,0 +1,128 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $edit_all
+		{
+			"classname"  "trigger_progress_use"
+			"keyvalues"
+			{
+				"use_length"    "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Storage_Room_Explosion_Timer"
+			}
+			"replace"
+			{
+        "RefireTime"     "300"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Quarantine_Room_Runner_1"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "15"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Quarantine_Room_Runner_2"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "17"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Quarantine_Room_Runner_3"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "18"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Quarantine_Room_Runner_4"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "19"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Quarantine_Room_Timer"
+			}
+			"replace"
+			{
+        "max"     "30"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Runner_Spawn_1"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "10"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Runner_Spawn_2"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "12"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Runner_Spawn_3"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "11"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "Runner_Spawn_4"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "12"
+			}
+		}
+	}
+}

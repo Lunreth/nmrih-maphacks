@@ -1,0 +1,208 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $remove_connections { "targetname" "tele_case" }
+    $modify
+		{
+      "match"
+			{
+				"classname"   "game_ui"
+			}
+			"replace"
+			{
+        "spawnflags"   "352"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"   "prop_physics"
+			}
+			"replace"
+			{
+        "classname"   "prop_physics_multiplayer"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t1"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2668 212"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t2"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2825 212"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t3"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2967 212"
+			}
+		}
+		$edit_all
+		{
+			"classname"	"game_ui"
+			"keyvalues"
+			{
+				"spawnflags"		"352"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "math_counter"
+			}
+			"replace"
+			{
+        "max"   "6"
+			}
+		}
+		$edit
+		{
+			"targetname" "tele_case"
+			"keyvalues"
+			{
+				"connections"
+				{
+				  "OnCase01" "windmilltele,AddOutput,target t1,0,-1"
+				  "OnCase02" "windmilltele,AddOutput,target t2,0,-1"
+				  "OnCase03" "windmilltele,AddOutput,target t3,0,-1"
+				  "OnCase04" "windmilltele,AddOutput,target t4,0,-1"
+				  "OnCase05" "windmilltele,AddOutput,target t5,0,-1"
+				  "OnCase06" "windmilltele,AddOutput,target t6,0,-1"
+				}
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"classname"   "game_ui"
+			}
+			"replace"
+			{
+        "spawnflags"   "352"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"   "prop_physics"
+			}
+			"replace"
+			{
+        "classname"   "prop_physics_multiplayer"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t1"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2668 212"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t2"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2825 212"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "t3"
+			}
+			"replace"
+			{
+        "origin"   "-5664 2967 212"
+			}
+		}
+		$edit_all
+		{
+			"classname"	"game_ui"
+			"keyvalues"
+			{
+				"spawnflags"		"352"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "math_counter"
+			}
+			"replace"
+			{
+        "max"   "6"
+			}
+		}
+		$edit
+		{
+			"targetname"	"tele_case"
+			"keyvalues"
+			{
+        "Case01"   "1"
+        "Case02"   "2"
+        "Case03"   "3"
+				"Case04"   "4"
+        "Case05"   "5"
+        "Case06"   "6"
+			}
+		}
+		"info_teleport_destination"
+		{
+      "targetname"  "t4"
+			"origin"	"-5400 2967 212"
+			"angles"  "0 180 0"
+		}
+		"info_teleport_destination"
+		{
+      "targetname"  "t5"
+			"origin"	"-5400 2825 212"
+			"angles"  "0 180 0"
+		}
+		"info_teleport_destination"
+		{
+      "targetname"  "t6"
+			"origin"	"-5400 2668 212"
+			"angles"  "0 180 0"
+		}
+		$remove { "targetname" "windmillrot" }
+		$remove { "targetname" "windmilltele" }
+  }
+}

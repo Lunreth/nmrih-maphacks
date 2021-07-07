@@ -1,0 +1,126 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{	
+	"entities"
+	{
+		// EDIT ALL PROP PHYSICS
+		$edit_all
+		{
+			"targetname"   "player01"
+			"keyvalues"
+			{
+				"default_spawn"   "1"
+				"spawnflags"      "0"
+			}
+		}
+		// MODIFY RESPAWNS
+		$modify
+		{
+      "match"
+			{
+				"classname"   "info_player_nmrih"
+				"targetname"  "player01"
+			}
+			"replace"
+			{
+        "default_spawn"   "1"
+				"spawnflags"      "0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"model" "models/props_c17/oildrum001_explosive.mdl"
+			}
+			"replace"
+			{
+				"model" "models/props_junk/gascan001a.mdl"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"50 -114 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"210 -88 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"200 -210 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"50 -114 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"26 -356 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"100 -356 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"extra_spawn_point"
+			"origin"	"-92 -246 8"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "lever_prop03"
+			}
+			"replace"
+			{
+        "solid"       "0"
+				"spawnflags"  "256"
+			}
+		}
+	}
+}

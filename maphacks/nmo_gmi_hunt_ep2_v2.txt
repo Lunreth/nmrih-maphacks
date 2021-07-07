@@ -1,0 +1,41 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // HOOKING EVENTS
+  "events"
+  {
+    "EventOutput"
+		{
+			"type"	      "EVENT_OUTPUT"
+			"targetname"	"le_woodegg"
+			"output"	    "OnBreak"
+		}
+		"EventOutput2"
+		{
+			"type"	      "EVENT_OUTPUT"
+			"targetname"	"BombObjective"
+			"output"	    "OnObjectiveEnd"
+		}
+  }
+  "entities"
+  {
+    "nmrih_game_state"
+		{
+			"targetname"	"game_state_control"
+			"origin"	"6838 5351 512"
+		}
+  }
+	// EVENT MANAGER
+	"EventOutput"
+	{
+		$fire { "targetname" "BombObjective" "input" "ObjectiveComplete" }
+		$fire { "targetname" "game_state_control" "input" "ExtractAllPlayers" }
+	}
+	"EventOutput2"
+	{
+		$fire { "targetname" "BombObjective" "input" "ObjectiveComplete" }
+		$fire { "targetname" "game_state_control" "input" "ExtractAllPlayers" }
+	}
+}

@@ -1,0 +1,71 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"464 -1544 87"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"357 -138 101"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"980 883 237"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"2378 -815 101"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"2532 670 421"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"-316 1277 101"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"origin"	"1091 -331 101"
+			"targetname"  "maphack_shambler"
+			"spawnflags"  "516"
+      "physdamagescale" "1.0"
+      "renderamt"   "255"
+      "rendercolor" "255 255 255"
+		}
+	}
+}

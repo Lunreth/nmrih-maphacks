@@ -1,0 +1,371 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+    "EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"extraction_boundary"
+			"output"	"OnObjectiveBegin"
+		}
+		"EventOutput2"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"find_escape_boundary"
+			"output"	"OnObjectiveBegin"
+		}
+		"EventOutput3"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"find_tools_boundary"
+			"output"	"OnObjectiveBegin"
+		}
+		"EventOutput4"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"find_gas_boundary"
+			"output"	"OnObjectiveBegin"
+		}
+  }
+  "pre_entities"
+  {
+    $remove_connections { "targetname" "armourbus_tooltrigger" }
+    $modify
+		{
+			"match"
+			{
+				"targetname" "find_escape_trigger"
+			}
+			"replace"
+			{
+				"StartDisabled" "1"
+			}
+		}
+    $edit
+    {
+      "targetname"  "extraction_boundary"
+      "keyvalues"
+      {
+        "connections"
+        {
+          "OnObjectiveBegin" "extraction_boundary,ObjectiveComplete,,3,-1"
+          "OnObjectiveBegin" "armourbus_fence,Break,,2,-1"
+        }
+      }
+    }
+    $edit
+    {
+      "targetname"  "find_escape_boundary"
+      "keyvalues"
+      {
+        "connections"
+        {
+          "OnObjectiveBegin" "find_escape_trigger,Enable,,0,-1"
+        }
+      }
+    }
+    $edit
+    {
+      "targetname"  "find_tools_boundary"
+      "keyvalues"
+      {
+        "connections"
+        {
+          "OnObjectiveBegin" "armourbus_toolbox,EnableMotion,,0,-1"
+        }
+      }
+    }
+    $edit
+    {
+      "targetname"  "armourbus_tooltrigger"
+      "keyvalues"
+      {
+        "connections"
+        {
+          "OnTrigger" "armourbus_toolbox_sound,PlaySound,,0,-1"
+          "OnTrigger" "armourbus_toolbox,Kill,,0,-1"
+          "OnTrigger" "find_tools_boundary,ObjectiveComplete,,3,-1"
+        }
+      }
+    }
+    $edit
+    {
+      "targetname"  "find_gas_boundary"
+      "keyvalues"
+      {
+        "connections"
+        {
+          "OnObjectiveBegin" "armourbus_gas,EnableMotion,,0,-1"
+        }
+      }
+    }
+    $modify
+		{
+			"match"
+			{
+				"targetname" "MaintTrigger"
+			}
+			"replace"
+			{
+				"spawnflags" "8"
+			}
+		}
+    $modify
+		{
+			"match"
+			{
+				"targetname" "tnt_trigger"
+			}
+			"replace"
+			{
+				"spawnflags" "8"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "water_trigger"
+			}
+			"replace"
+			{
+				"spawnflags" "8"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_tooltrigger"
+			}
+			"replace"
+			{
+				"spawnflags" "8"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_gastrigger"
+			}
+			"replace"
+			{
+				"spawnflags" "8"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_gastrigger"
+			}
+			"replace"
+			{
+				"StartDisabled" "1"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "tntdoorr"
+			}
+			"replace"
+			{
+				"spawnflags" "2048"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "tntdoorl"
+			}
+			"replace"
+			{
+				"spawnflags" "2048"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_toolbox"
+			}
+			"replace"
+			{
+				"spawnflags" "12"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_gas"
+			}
+			"replace"
+			{
+				"spawnflags" "12"
+			}
+		}
+  }
+  // ENTITY EDITOR
+	"entities"
+	{
+    $modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+        "spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+    $edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+    $modify
+		{
+			"match"
+			{
+				"targetname" "find_escape_trigger"
+			}
+			"replace"
+			{
+				"StartDisabled" "1"
+			}
+		}
+		"filter_activator_name"
+		{
+			"targetname"	"filter_key"
+			"origin"	"-1679 -3378 725"
+			"keyvalues"
+			{
+				"filtername"			"MaintKey"
+			}
+		}
+    "filter_activator_name"
+		{
+			"targetname"	"filter_tnt"
+			"origin"	"-1679 -3378 730"
+			"keyvalues"
+			{
+				"filtername"			"tnt"
+			}
+		}
+		"filter_activator_name"
+		{
+			"targetname"	"filter_water"
+			"origin"	"-1679 -3378 720"
+			"keyvalues"
+			{
+				"filtername"			"water"
+			}
+		}
+		"filter_activator_name"
+		{
+			"targetname"	"filter_tools"
+			"origin"	"-1679 -3378 735"
+			"keyvalues"
+			{
+				"filtername"			"armourbus_toolbox"
+			}
+		}
+		"filter_activator_name"
+		{
+			"targetname"	"filter_gas"
+			"origin"	"-1679 -3378 740"
+			"keyvalues"
+			{
+				"filtername"			"armourbus_gas"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "MaintTrigger"
+			}
+			"replace"
+			{
+				"filtername" "filter_key"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "tnt_trigger"
+			}
+			"replace"
+			{
+				"filtername" "filter_tnt"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "water_trigger"
+			}
+			"replace"
+			{
+				"filtername" "filter_water"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_tooltrigger"
+			}
+			"replace"
+			{
+				"filtername" "filter_tools"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "armourbus_gastrigger"
+			}
+			"replace"
+			{
+				"filtername" "filter_gas"
+				"StartDisabled" "1"
+			}
+		}
+	}
+	"EventOutput"
+	{
+    $fire { "targetname" "armourbus_gas" "input" "Kill" }
+    $fire { "targetname" "extraction_boundary" "input" "ObjectiveComplete" }
+    $fire { "targetname" "armourbus_fence" "input" "Break" }
+	}
+	"EventOutput2"
+	{
+    $fire { "targetname" "find_escape_trigger" "input" "Enable" }
+	}
+	"EventOutput3"
+	{
+    $fire { "targetname" "armourbus_toolbox" "input" "EnableMotion" }
+	}
+	"EventOutput4"
+	{
+    $fire { "targetname" "armourbus_toolbox" "input" "Kill" }
+    $fire { "targetname" "armourbus_gastrigger" "input" "Enable" }
+    $fire { "targetname" "armourbus_gas" "input" "EnableMotion" }
+	}
+}

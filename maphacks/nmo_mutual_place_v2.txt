@@ -1,0 +1,28 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+		$modify
+		{
+			"insert"
+			{
+				"item_zippo" "0"
+			}
+			"match"
+			{
+				"targetname" "fists_equip"
+			}
+		}
+		$edit
+		{
+			"targetname" "fists_equip"
+			"keyvalues"
+			{
+        "item_zippo" "0"
+			}
+		}
+	}
+}

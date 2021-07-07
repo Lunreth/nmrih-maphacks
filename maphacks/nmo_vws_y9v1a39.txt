@@ -1,0 +1,57 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // PRE LOADING EDITOR
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"classname"  "trigger_soundscape"
+				"origin"     "-512 100 -396"
+			}
+			"replace"
+			{
+        "targetname"  "first_soundscape"
+			}
+		}
+    $edit
+    {
+        "targetname"  "first_soundscape"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnStartTouch" "starting_spawn,InputEnable,,2,1"
+              "OnStartTouch" "starting_spawn,RespawnPlayers,,2.1,1"
+            }
+        }
+    }
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "frontguard"
+			}
+			"replace"
+			{
+        "origin"     "-736 -100 -390"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"  "info_player_nmrih"
+			}
+			"replace"
+			{
+        "targetname"  "starting_spawn"
+			}
+		}
+  }
+}
