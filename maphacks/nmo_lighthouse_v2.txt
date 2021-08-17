@@ -48,6 +48,155 @@
 				"use_length"    "4"
 			}
 		}
+		// REMOVE OLD CONNECTIONS
+    $remove_connections { "targetname" "runners_door_1" }
+    $remove_connections { "targetname" "runners_door_2" }
+    $remove_connections { "targetname" "runners_door_4" }
+    $remove_connections { "targetname" "runners_door_6" }
+    $remove_connections { "targetname" "runners_door_5_1" }
+    $remove_connections { "targetname" "runners_door_3" }
+    $remove_connections { "targetname" "runners_door_5_0" }
+    // ADD THEM AGAIN PLUS NEW ONES
+    $edit
+    {
+        "targetname"  "runners_door_1"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "runners_door_1_template,ForceSpawn,,0,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "runners_door_1_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_1_spawner,Disable,,2,1"
+              "OnFullyClosed" "runners_door_1_spawner,Kill,,2.1,1"
+              "OnFullyClosed" "runners_door_1_dest1,Kill,,2.2,1"
+              "OnFullyClosed" "runners_door_1_dest2,Kill,,2.2,1"
+              "OnFullyClosed" "trigger_zombie_kill_1,Enable,,2.3,1"
+              "OnFullyClosed" "trigger_zombie_kill_1,Kill,,5,1"
+              "OnFullyClosed" "runners_door_1_template,ForceSpawn,,0,1"
+              "OnClose" "runner_door_1_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_2"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "runners_door_2_template,ForceSpawn,,0.5,1"
+              "OnFullyClosed" "runners_door_2_spawner,Disable,,0.1,1"
+              "OnFullyClosed" "runners_door_2_spawner,Kill,,0.2,1"
+              "OnFullyClosed" "runners_door_2_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_2,Enable,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_2,Kill,,5,1"
+              "OnFullyClosed" "runner_door_block_brush1,Kill,,0.2,1"
+              "OnClose" "runners_door_2_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_3"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "runners_door_3_spawner_2,Kill,,1,1"
+              "OnFullyClosed" "runners_door_3_spawner_1,Disable,,0.1,1"
+              "OnFullyClosed" "runners_door_3_spawner_1,Kill,,0.2,1"
+              "OnFullyClosed" "runners_door_3_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_3,Enable,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_3,Kill,,5,1"
+              "OnFullyClosed" "runners_door_3_spawner_2,Disable,,0.1,1"
+              "OnFullyClosed" "runners_door_3_spawner_2,Kill,,0.2,1"
+              "OnClose" "runner_door_3_brush_player,Kill,,0,-1"
+              "OnFullyClosed" "runners_door_3_template,ForceSpawn,,0.5,-1"
+              "OnClose" "runner_door_3_1_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_4"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "runners_door_4_template,ForceSpawn,,0.5,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "runners_door_4_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_4_spawner,Disable,,2,1"
+              "OnFullyClosed" "runners_door_4_spawner,Kill,,2.1,1"
+              "OnFullyClosed" "trigger_zombie_kill_4,Enable,,2.3,1"
+              "OnFullyClosed" "trigger_zombie_kill_4,Kill,,10,1"
+              "OnClose" "runners_door_4_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_5_1"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "trigger_zombie_kill_5_1,Kill,,5,1"
+              "OnFullyClosed" "runners_door_5_1_trigger,Kill,,2.4,1"
+              "OnFullyClosed" "runners_door_5_spawner_1,Kill,,2.2,1"
+              "OnFullyClosed" "runners_door_5_spawner_1,Disable,,2.1,1"
+              "OnFullyClosed" "runners_door_5_1_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "runners_door_5_template_1,ForceSpawn,,0.5,1"
+              "OnFullyClosed" "trigger_zombie_kill_5_1,Enable,,0,1"
+              "OnFullyClosed" "runners_door_5_1_model,EnableCollision,,0,-1"
+              "OnClose" "runners_door_5_1_model,DisableCollision,,0,-1"
+              "OnClose" "runners_door_5_1_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_6"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnOpen" "runners_door_6_spawner,Enable,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_6,Kill,,5,1"
+              "OnFullyClosed" "runners_door_6_trigger,Kill,,2.4,1"
+              "OnFullyClosed" "runners_door_6_spawner,Kill,,2.2,1"
+              "OnFullyClosed" "runners_door_6_spawner,Disable,,2.1,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "runners_door_6_template,ForceSpawn,,0.5,1"
+              "OnFullyClosed" "trigger_zombie_kill_6,Enable,,0,1"
+              "OnClose" "runners_door_6_brush_player,Kill,,0,-1"
+            }
+        }
+    }
+    $edit
+    {
+        "targetname"  "runners_door_5_0"
+        "keyvalues"
+        {
+            "connections"
+            {
+              "OnFullyClosed" "trigger_zombie_kill_5_0,Kill,,5,1"
+              "OnFullyClosed" "runners_door_5_0_trigger,Kill,,2.4,1"
+              "OnFullyClosed" "runners_door_5_spawner_0,Kill,,2.2,1"
+              "OnFullyClosed" "runners_door_5_spawner_0,Disable,,2.1,1"
+              "OnFullyClosed" "runners_door_5_0_sound_closed,PlaySound,,2,1"
+              "OnFullyClosed" "runners_door_5_template_0,ForceSpawn,,0.5,1"
+              "OnFullyClosed" "runners_door_sound_case,PickRandom,,0,1"
+              "OnFullyClosed" "trigger_zombie_kill_5_0,Enable,,0,1"
+              "OnFullyClosed" "runners_door_5_0_model,EnableCollision,,0,-1"
+              "OnClose" "runners_door_5_0_brush_player,Kill,,0,-1"
+            }
+        }
+    }
 	}
 	"entities"
 	{
