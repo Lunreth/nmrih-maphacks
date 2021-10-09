@@ -1,0 +1,28 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		"me_kitknife"
+		{
+			"origin"	"-5300 -3529 82"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-4864 -4148 45"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-4416 -3968 32"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-4148 -3605 44"
+		}
+		"me_wrench"
+		{
+			"origin"	"-4756 -3407 29"
+		}
+	}
+}
