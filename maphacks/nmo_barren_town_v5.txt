@@ -1,0 +1,50 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"classname"  "npc_template_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+			}
+		}
+		$edit_all
+		{
+			"classname" "npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency" "10"
+			}
+		}
+  }
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"classname"  "npc_template_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+			}
+		}
+		$edit_all
+		{
+			"classname" "npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency" "10"
+			}
+		}
+	}
+}
