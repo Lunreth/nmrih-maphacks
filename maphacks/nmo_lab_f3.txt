@@ -16,5 +16,37 @@
         "RefireTime"     "150"
 			}
 		}
+		"me_kitknife"
+		{
+			"origin"	"-1332 1864 -366"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-1332 1870 -366"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-1332 1876 -366"
+		}
+		"me_kitknife"
+		{
+			"origin"	"-1332 1880 -366"
+		}
+		"me_wrench"
+		{
+			"origin"	"-1332 1832 -366"
+		}
+		"me_wrench"
+		{
+			"origin"	"-1332 1816 -366"
+		}
+		"me_wrench"
+		{
+			"origin"	"-1300 1816 -366"
+		}
+		"me_wrench"
+		{
+			"origin"	"-1300 1832 -366"
+		}
 	}
 }
