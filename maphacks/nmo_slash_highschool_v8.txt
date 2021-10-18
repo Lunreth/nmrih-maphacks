@@ -45,5 +45,92 @@
 				"spawn_regen_target" "1.0"
 			}
 		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "code1"
+			}
+			"replace"
+			{
+        "holdtime" "5.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "code2"
+			}
+			"replace"
+			{
+        "holdtime" "5.0"
+			}
+		}
+	}
+	"pre_entities"
+	{
+    $modify
+		{
+			"match"
+			{
+				"classname" "npc_template_maker"
+			}
+			"replace"
+			{
+        "MaxNPCCount" "4"
+			}
+		}
+		$edit_all
+		{
+			"classname" "npc_template_maker"
+			"keyvalues"
+			{
+				"MaxNPCCount" "4"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+        "spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "code1"
+			}
+			"replace"
+			{
+        "holdtime" "5.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "code2"
+			}
+			"replace"
+			{
+        "holdtime" "5.0"
+			}
+		}
 	}
 }
