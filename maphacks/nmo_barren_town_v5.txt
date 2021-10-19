@@ -9,11 +9,55 @@
 		{
       "match"
 			{
+				"targetname"  "phone_booth_password"
+			}
+			"replace"
+			{
+        "use_length"    "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "objective_weld_lock"
+			}
+			"replace"
+			{
+        "use_length"    "5"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
 				"classname"  "npc_template_maker"
 			}
 			"replace"
 			{
-        "SpawnFrequency"    "10"
+        "SpawnFrequency"    "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"TemplateName"  "runner"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "6"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"TemplateName"  "kid"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "6"
 			}
 		}
 		$edit_all
@@ -21,7 +65,7 @@
 			"classname" "npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency" "10"
+				"SpawnFrequency" "20"
 			}
 		}
   }
@@ -35,7 +79,51 @@
 			}
 			"replace"
 			{
-        "SpawnFrequency"    "10"
+        "SpawnFrequency"    "20"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"TemplateName"  "runner"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "6"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"TemplateName"  "kid"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "6"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "phone_booth_password"
+			}
+			"replace"
+			{
+        "use_length"    "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "objective_weld_lock"
+			}
+			"replace"
+			{
+        "use_length"    "5"
 			}
 		}
 		$edit_all
@@ -43,7 +131,7 @@
 			"classname" "npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency" "10"
+				"SpawnFrequency" "20"
 			}
 		}
 	}
