@@ -27,6 +27,90 @@
         "use_length"    "5"
 			}
 		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner_all"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "room_spawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "fence_ambush"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "house_ambush"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "house_ambush_2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner_welder_taken"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
     $modify
 		{
       "match"
@@ -113,6 +197,90 @@
 			"replace"
 			{
         "use_length"    "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner_all"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "room_spawner"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "fence_ambush"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "house_ambush"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "house_ambush_2"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "ambush_spawner_welder_taken"
+			}
+			"replace"
+			{
+        "MaxNPCCount"    "2"
+        "MaxLiveChildren"    "1"
 			}
 		}
 		$modify
