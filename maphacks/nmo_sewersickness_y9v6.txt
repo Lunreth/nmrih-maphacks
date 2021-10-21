@@ -20,6 +20,22 @@
 		{
       "match"
 			{
+				"targetname"  "obj_goahead"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "grenade_ppo01"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "grenade_ppo02"
+				"GlowEntity6Color"  "0 255 0"
+				"GlowEntity7Name"   "grenade_ppo03"
+				"GlowEntity7Color"  "0 255 0"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
 				"targetname"  "grenade_ppo01_pt01"
 			}
 			"replace"
@@ -81,38 +97,16 @@
 		{
       "match"
 			{
-				"classname"   "nmrih_objective_boundary"
 				"targetname"  "obj_goahead"
 			}
 			"replace"
 			{
-        "GlowEntity9Name"   "grenade_ppo01"
-				"GlowEntity9Color"  "0 255 255"
-				"GlowEntity8Name"   "grenade_ppo02"
-				"GlowEntity8Color"  "0 255 255"
+        "GlowEntity5Name"   "grenade_ppo01"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "grenade_ppo02"
+				"GlowEntity6Color"  "0 255 0"
 				"GlowEntity7Name"   "grenade_ppo03"
-				"GlowEntity7Color"  "0 255 255"
-				"GlowEntity6Name"   "door02"
-				"GlowEntity6Color"  "255 0 0"
-			}
-		}
-		$modify
-		{
-      "match"
-			{
-				"classname"   "nmrih_objective_boundary"
-				"targetname"  "obj_destroy_machine"
-			}
-			"replace"
-			{
-        "GlowEntity9Name"   "powerball_3"
-				"GlowEntity9Color"  "0 255 255"
-				"GlowEntity8Name"   "powerball_2"
-				"GlowEntity8Color"  "0 255 255"
-				"GlowEntity7Name"   "powerball_1"
-				"GlowEntity7Color"  "0 255 255"
-				"GlowEntity6Name"   "physgun"
-				"GlowEntity6Color"  "255 0 0"
+				"GlowEntity7Color"  "0 255 0"
 			}
 		}
 		$modify
