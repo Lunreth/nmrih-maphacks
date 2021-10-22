@@ -51,7 +51,7 @@
 			}
 			"replace"
 			{
-        "spawnflags"   "2"
+        "spawnflags"   "8"
 			}
 		}
 		$edit_all
@@ -59,7 +59,7 @@
 			"classname" "trigger_progress_use"
 			"keyvalues"
 			{
-				"spawnflags"	  "2"
+				"spawnflags"	  "8"
 			}
 		}
 		$edit_all
@@ -67,7 +67,7 @@
 			"classname" "trigger_progress_weapon"
 			"keyvalues"
 			{
-				"spawnflags"	  "2"
+				"spawnflags"	  "8"
 			}
 		}
 		$modify
