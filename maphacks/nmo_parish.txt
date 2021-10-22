@@ -1,13 +1,12 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-	"entities"
+  "pre_entities"
 	{
     $modify
 		{
       "match"
 			{
-				"classname"   "nmrih_objective_boundary"
 				"targetname"  "obj2B"
 			}
 			"replace"
@@ -28,7 +27,6 @@
 		{
 			"match"
 			{
-				"classname"   "nmrih_objective_boundary"
 				"targetname"  "obj2"
 			}
 			"replace"
@@ -51,7 +49,6 @@
 		{
 			"match"
 			{
-				"classname"   "nmrih_objective_boundary"
 				"targetname"  "obj10"
 			}
 			"replace"
@@ -66,7 +63,81 @@
 		{
 			"match"
 			{
-				"classname"   "nmrih_objective_boundary"
+				"targetname"  "obj7"
+			}
+			"replace"
+			{
+        "GlowEntity7Name"   "obj7k3"
+				"GlowEntity7Color"  "255 0 0"
+				"GlowEntity8Name"   "obj7k2"
+				"GlowEntity8Color"  "255 0 0"
+				"GlowEntity9Name"   "obj7k1"
+				"GlowEntity9Color"  "255 0 0"
+			}
+		}
+	}
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "obj2B"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "obj2Bl1"
+				"GlowEntity5Color"  "0 255 0"
+				"GlowEntity6Name"   "obj2Bl2"
+				"GlowEntity6Color"  "0 255 0"
+				"GlowEntity7Name"   "obj2Bl3"
+				"GlowEntity7Color"  "0 255 0"
+				"GlowEntity8Name"   "obj2Bl4"
+				"GlowEntity8Color"  "0 255 0"
+        "GlowEntity9Name"   "o2ladder2BPL"
+				"GlowEntity9Color"  "255 0 0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname"  "obj2"
+			}
+			"replace"
+			{
+				"GlowEntity4Name"   "obj2k1"
+				"GlowEntity4Color"  "0 255 255"
+				"GlowEntity5Name"   "obj2k2"
+				"GlowEntity5Color"  "0 255 255"
+				"GlowEntity6Name"   "obj2k3"
+				"GlowEntity6Color"  "0 255 255"
+				"GlowEntity7Name"   "obj2k4"
+				"GlowEntity7Color"  "0 255 255"
+				"GlowEntity8Name"   "obj2k5"
+				"GlowEntity8Color"  "0 255 255"
+				"GlowEntity9Name"   "obj2k6"
+				"GlowEntity9Color"  "0 255 255"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname"  "obj10"
+			}
+			"replace"
+			{
+				"GlowEntity8Name"   "obj10_cannisterpl"
+				"GlowEntity8Color"  "0 255 255"
+				"GlowEntity9Name"   "obj10cannisterre"
+				"GlowEntity9Color"  "255 255 0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
 				"targetname"  "obj7"
 			}
 			"replace"
