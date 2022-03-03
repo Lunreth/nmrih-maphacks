@@ -4,7 +4,7 @@
 "MapHack"
 {
   // ENTITY EDITOR
-	"entities"
+  "pre_entities"
 	{
     $modify
 		{
@@ -14,7 +14,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -25,7 +25,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -36,7 +36,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -47,7 +47,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -58,7 +58,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -69,7 +69,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -80,7 +80,7 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
 			}
 		}
 		$modify
@@ -91,7 +91,98 @@
 			}
 			"replace"
 			{
-        "modelscale" "1.5"
+        "modelscale" "1.75"
+			}
+		}
+	}
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page1"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page2"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page3"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page4"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page5"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page6"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page7"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"parentname"  "slender_page8"
+			}
+			"replace"
+			{
+        "modelscale" "1.75"
 			}
 		}
 	}
