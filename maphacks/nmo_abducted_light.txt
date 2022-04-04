@@ -1,0 +1,37 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"MaxLiveChildren"  "5"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "20"
+        "MaxLiveChildren" "2"
+			}
+		}
+  }
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"MaxLiveChildren"  "5"
+			}
+			"replace"
+			{
+        "SpawnFrequency"     "20"
+        "MaxLiveChildren" "2"
+			}
+		}
+	}
+}
