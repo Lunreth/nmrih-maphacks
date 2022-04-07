@@ -1,0 +1,151 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "BOSS_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"       "5"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_4"
+			}
+			"replace"
+			{
+        "MaxNPCCount"       "8"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_5"
+			}
+			"replace"
+			{
+        "MaxNPCCount"       "5"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_6"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "4"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_7"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "2"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_8"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+  }
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "BOSS_maker"
+			}
+			"replace"
+			{
+        "SpawnFrequency"       "5"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_4"
+			}
+			"replace"
+			{
+        "MaxNPCCount"       "8"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_5"
+			}
+			"replace"
+			{
+        "MaxNPCCount"       "5"
+			}
+		}
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_6"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "4"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_7"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "2"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "npcmaker_8"
+			}
+			"replace"
+			{
+        "SpawnFrequency"    "10"
+        "MaxLiveChildren"   "1"
+			}
+		}
+	}
+}
