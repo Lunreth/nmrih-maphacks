@@ -1,0 +1,65 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"Destroy reactor"
+			"output"	"OnObjectiveEnd"
+		}
+  }
+  "pre_entities"
+	{
+    $modify
+		{
+			"match"
+			{
+				"targetname" "Destroy reactor"
+			}
+			"replace"
+			{
+        "GlowEntity3Name" "Dinamit_Item"
+				"GlowEntity3Color" "0 255 0"
+			}
+		}
+		$edit_all
+		{
+			"targetname" "Destroy reactor"
+			"keyvalues"
+			{
+        "GlowEntity3Name" "Dinamit_Item"
+				"GlowEntity3Color" "0 255 0"
+			}
+		}
+	}
+	"entities"
+	{
+    $modify
+		{
+			"match"
+			{
+				"targetname" "Destroy reactor"
+			}
+			"replace"
+			{
+        "GlowEntity3Name" "Dinamit_Item"
+				"GlowEntity3Color" "0 255 0"
+			}
+		}
+		$edit_all
+		{
+			"targetname" "Destroy reactor"
+			"keyvalues"
+			{
+        "GlowEntity3Name" "Dinamit_Item"
+				"GlowEntity3Color" "0 255 0"
+			}
+		}
+	}
+	"EventOutput"
+	{
+		$fire { "targetname" "c_level_door4_trigger" "input" "Enable" }
+	}
+}
