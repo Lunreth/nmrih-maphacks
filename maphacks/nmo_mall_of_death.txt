@@ -1,0 +1,34 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "obj_gate_wheel"
+			}
+			"replace"
+			{
+        "distance"       "70"
+			}
+		}
+	}
+	"entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "obj_gate_wheel"
+			}
+			"replace"
+			{
+        "distance"       "70"
+			}
+		}
+	}
+}
