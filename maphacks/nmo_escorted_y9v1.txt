@@ -3,6 +3,44 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "pre_entities"
+	{
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "survivor1"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "survivor"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "tracktrain_survivor"
+			}
+			"replace"
+			{
+        "dmg"       "1"
+			}
+		}
+	}
 	"entities"
 	{
 		// SPAWNS A SHAMBLER
@@ -11,6 +49,41 @@
 			"targetname"	"shambler_house"
 			"origin"	    "-2328 -2144 64"
 			"angles"	    "0 0 0"
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "survivor1"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "survivor"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "tracktrain_survivor"
+			}
+			"replace"
+			{
+        "dmg"       "1"
+			}
 		}
 	}
 }
