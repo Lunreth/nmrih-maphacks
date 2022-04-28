@@ -1,0 +1,35 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+    "me_wrench"
+		{
+			"origin"	"2440 7350 -577"
+		}
+		"me_wrench"
+		{
+			"origin"	"2440 7300 -577"
+		}
+		"me_wrench"
+		{
+			"origin"	"2400 7350 -577"
+		}
+		"me_wrench"
+		{
+			"origin"	"2400 7300 -577"
+		}
+		"prop_physics_override"
+		{
+			"targetname"	"prop_climb1"
+			"origin"	    "2126 5120 -606"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/static/nmrih_wood_crate_01.mdl"
+			}
+		}
+	}
+}
