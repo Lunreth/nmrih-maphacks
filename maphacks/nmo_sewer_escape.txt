@@ -31,5 +31,25 @@
 				"model"			"models/static/nmrih_wood_crate_01.mdl"
 			}
 		}
+		"prop_physics_override"
+		{
+			"targetname"	"prop_climb2"
+			"origin"	    "2126 5120 -540"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/static/nmrih_wood_crate_01.mdl"
+			}
+		}
+		"prop_physics_override"
+		{
+			"targetname"	"prop_climb1"
+			"origin"	    "2126 5080 -540"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/static/nmrih_wood_crate_01.mdl"
+			}
+		}
 	}
 }
