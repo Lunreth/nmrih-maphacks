@@ -3,23 +3,26 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-  "RemovingWall"
+  "EventWall"
 	{
 			"type"	"EVENT_OUTPUT"
 			"targetname"	"obj2"
 			"output"	"OnObjectiveBegin"
 	}
-	"RemovingWall"
+	"EventWall"
 	{
 		$fire { "targetname"	"sound_combineshieldwall_idle1" "input" "StopSound" }
-		$remove { "targetname" "sound_combineshieldwall_idle1" }
 		$fire { "targetname"	"sound_combineshieldwall_touch1" "input" "StopSound" }
-		$remove { "targetname" "sound_combineshieldwall_touch1" }
 		$fire { "targetname"	"clip_combineshieldwall1" "input" "Disable" }
-		$remove { "targetname" "clip_combineshieldwall1" }
+		$fire { "targetname"	"clip_combineshieldwall1" "input" "Kill" }
 		$fire { "targetname"	"brush_combineshieldwall1" "input" "Disable" }
-		$remove { "targetname" "brush_combineshieldwall1" }
+		$fire { "targetname"	"brush_combineshieldwall1" "input" "Kill" }
 		$fire { "targetname"	"trigger_combineshieldwall1" "input" "Disable" }
+		$fire { "targetname"	"trigger_combineshieldwall1" "input" "Kill" }
+		$remove { "targetname" "sound_combineshieldwall_idle1" }
+		$remove { "targetname" "sound_combineshieldwall_touch1" }
+		$remove { "targetname" "clip_combineshieldwall1" }
+		$remove { "targetname" "brush_combineshieldwall1" }
 		$remove { "targetname" "trigger_combineshieldwall1" }
 	}
 }
