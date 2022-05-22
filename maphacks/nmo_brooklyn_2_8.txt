@@ -1,0 +1,15 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+  "pre_ntities"
+	{
+    $remove { "id" "600741" }
+    $remove { "id" "600741" }
+	}
+	"entities"
+	{
+    $remove { "id" "600741" }
+    $remove { "id" "600741" }
+	}
+}
