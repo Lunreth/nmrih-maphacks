@@ -1,0 +1,56 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $remove { "targetname" "Nuke all" }
+    $remove { "targetname" "Nuke all" }
+    $remove { "targetname" "Nuke all" }
+    $remove { "targetname" "Nuke in" }
+		"fa_fnfal"
+		{
+			"origin"	"-468 -319 -241"
+		}
+		"fa_cz858"
+		{
+			"origin"	"-1179 317 603"
+		}
+		"exp_tnt"
+		{
+			"origin"	"-2206 672 386"
+		}
+		"fa_jae700"
+		{
+			"origin"	"394 2077 183"
+		}
+		"fa_m16a4"
+		{
+			"origin"	"-278 3291 -725"
+		}
+		"fa_winchester1892"
+		{
+			"origin"	"-1139 2272 -850"
+		}
+		"fa_mac10"
+		{
+			"origin"	"-1790 2080 -952"
+		}
+		"fa_superx3"
+		{
+			"origin"	"-1544 2271 -620"
+		}
+		"fa_sks"
+		{
+			"origin"	"-561 1888 -1024"
+		}
+		"exp_molotov"
+		{
+			"origin"	"448 -1056 -62"
+		}
+		"exp_molotov"
+		{
+			"origin"	"-768 2624 -740"
+		}
+	}
+}
