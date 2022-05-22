@@ -2,7 +2,7 @@
 "MapHack"
 {
   // ENTITY EDITOR
-  "pre_ntities"
+  "pre_entities"
 	{
     $remove { "id" "600741" }
     $remove { "id" "600741" }

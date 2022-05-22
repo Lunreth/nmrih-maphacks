@@ -5,8 +5,6 @@
 	"entities"
 	{
     $remove { "targetname" "Nuke all" }
-    $remove { "targetname" "Nuke all" }
-    $remove { "targetname" "Nuke all" }
     $remove { "targetname" "Nuke in" }
 		"fa_fnfal"
 		{
@@ -15,10 +13,6 @@
 		"fa_cz858"
 		{
 			"origin"	"-1179 317 603"
-		}
-		"exp_tnt"
-		{
-			"origin"	"-2206 672 386"
 		}
 		"fa_jae700"
 		{
@@ -43,14 +37,6 @@
 		"fa_sks"
 		{
 			"origin"	"-561 1888 -1024"
-		}
-		"exp_molotov"
-		{
-			"origin"	"448 -1056 -62"
-		}
-		"exp_molotov"
-		{
-			"origin"	"-768 2624 -740"
 		}
 	}
 }

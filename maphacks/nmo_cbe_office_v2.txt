@@ -1,0 +1,61 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+    $remove { "targetname" "runner_inf_3" }
+    $remove { "targetname" "runner_inf_2" }
+    $remove { "targetname" "runner_inf_1" }
+    "npc_template_maker"
+		{
+			"targetname"	"extra_spawn_2"
+			"origin"	"1392 160 -624"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"MaxLiveChildren"			"2"
+				"spawnflags"        "352"
+				"Radius"        "32"
+				"SpawnFrequency"        "20"
+				"StartDisabled"        "0"
+				"TemplateName"        "runner_tmp"
+			}
+		}
+		"npc_template_maker"
+		{
+			"targetname"	"extra_spawn"
+			"origin"	"-1680 -1344 -624"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"MaxLiveChildren"			"2"
+				"spawnflags"        "352"
+				"Radius"        "32"
+				"SpawnFrequency"        "20"
+				"StartDisabled"        "0"
+				"TemplateName"        "runner_tmp"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname"  "objective1"
+			}
+			"replace"
+			{
+        "GlowEntity5Name"   "obj_gear"
+				"GlowEntity5Color"  "255 255 0"
+				"GlowEntity6Name"   "obj_toolbox"
+				"GlowEntity6Color"  "255 0 0"
+        "GlowEntity7Name"   "obj_gascan"
+				"GlowEntity7Color"  "0 255 0"
+				"GlowEntity8Name"   "obj_battery"
+				"GlowEntity8Color"  "0 0 255"
+				"GlowEntity9Name"   "obj_gear"
+				"GlowEntity9Color"  "255 255 0"
+			}
+		}
+	}
+}
