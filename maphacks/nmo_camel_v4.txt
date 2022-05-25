@@ -4,7 +4,6 @@
   // ENTITY EDITOR
 	"entities"
 	{
-    $remove { "targetname" "Nuke all" }
     $remove { "targetname" "Nuke in" }
 		"fa_fnfal"
 		{
