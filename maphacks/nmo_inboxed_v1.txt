@@ -1,6 +1,31 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "events"
+  {
+    "EventGameEvent"
+		{
+			"type"	"EVENT_GAMEEVENT"
+			"eventname"	"nmrih_round_begin"
+		}
+		
+		"EventTimed"
+		{
+			"type"	"EVENT_TIMED"
+			"delay"	"1.5"
+			"repeat"	"1"
+			"startDisabled"	"1"
+		}
+  }
+  
+  "vars"
+  {
+    "i_z_limit20" { "type" "int" "value" "20" }
+    "i_z_limit10" { "type" "int" "value" "10" }
+    "i_z_limit5" { "type" "int" "value" "5" }
+    "loop_count" { "type" "int" "value" "0" }
+  }
+  
   "pre_entities"
   {
     // REMOVE OLD CONNECTIONS
@@ -109,366 +134,202 @@
 				"spawnflags"        "3"
 			}
 		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"240 270 524"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"574 880 944"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"656 -2700 920"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"656 -2650 920"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"656 -2600 920"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"656 -2550 920"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-320 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-280 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_runnerzombie"
-		{
-			"origin"	"-240 -5714 1882"
-			"targetname"  "maphack_runner"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_runnerzombie"
-		{
-			"origin"	"-200 -5714 1882"
-			"targetname"  "maphack_runner"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-160 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-120 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-80 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"-40 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"0 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"40 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"80 -5714 1882"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+	}
+	
+	"EventGameEvent"
+	{
+		$console { "msg" "EventGameEvent" }
+		//$trigger { "event" "EventRecursiveTest" }
+		$start { "event" "EventTimed" }
+  }
+  
+  "EventTimed"
+	{
+    $if
+    { "cond" "loop_count < i_z_limit10"
+			"entities"
+			{
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"240 270 564"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"656 -2550 940"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"-320 -5714 1890"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"5200 -4550 3330"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"4930 -7960 2616"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 10 SHAMBLERS AT THE TIME
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"4636 -8300 3330"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+			}
 		}
 		
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4550 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4600 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4650 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4750 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4800 3330"
-			"targetname"  "maphack_shambler"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4850 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"5200 -4900 3330"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+		$if
+    { "cond" "loop_count < i_z_limit5"
+			"entities"
+			{
+        // ADDING 5 RUNNERS AT THE TIME
+				"npc_nmrih_runnerzombie"
+        {
+          "origin"	"4700 -8228 3292"
+          "targetname"  "mh_runner"
+          "spawnarmor"  "0" // 2 = never
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 5 KIDS AT THE TIME
+				"npc_nmrih_kidzombie"
+        {
+          "origin"	"-280 -5714 1890"
+          "targetname"  "mh_kid"
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+        
+        // ADDING 5 KIDS AT THE TIME
+				"npc_nmrih_kidzombie"
+        {
+          "origin"	"4930 -8000 2616"
+          "targetname"  "mh_kid"
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+			}
 		}
 		
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -7960 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+		$increment { "var" "loop_count" }
+		
+		$if
+		{ "cond" "loop_count >= i_z_limit10"
+			"entities"
+			{
+				$stop { "event" "EventTimed" }
+			}
 		}
-		"npc_nmrih_runnerzombie"
+	}
+  
+  "EventRecursiveTest"
+	{
+		$if
 		{
-			"origin"	"4930 -8000 2616"
-			"targetname"  "maphack_runner"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_runnerzombie"
-		{
-			"origin"	"4930 -8040 2616"
-			"targetname"  "maphack_runner"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8080 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8120 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8160 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8240 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8280 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8320 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8360 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4930 -8400 2616"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+			"cond" "loop_count < i_z_limit10"
+			"entities"
+			{
+				"npc_nmrih_shamblerzombie"
+        {
+          "origin"	"240 270 564"
+          "targetname"  "mh_shambler"
+          "spawnarmor"  "0" // 2 = never
+          "spawncrawler"  "0" // 1 = always
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+			}
 		}
 		
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4636 -8228 3292"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+		$if
+    { "cond" "loop_count < i_z_limit5"
+			"entities"
+			{
+				"npc_nmrih_runnerzombie"
+        {
+          "origin"	"4700 -8228 3292"
+          "targetname"  "mh_runner"
+          "spawnarmor"  "0" // 2 = never
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+			}
 		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4636 -8180 3292"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+		
+		$if
+    { "cond" "loop_count < i_z_limit5"
+			"entities"
+			{
+				"npc_nmrih_kidzombie"
+        {
+          "origin"	"4930 -8000 2616"
+          "targetname"  "mh_kid"
+          "spawnflags"  "512"
+          //"modeloverride" ""
+          "physdamagescale" "1.0"
+        }
+			}
 		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4636 -8260 3292"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_shamblerzombie"
-		{
-			"origin"	"4636 -8300 3292"
-			"targetname"  "maphack_shambler"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
-		}
-		"npc_nmrih_runnerzombie"
-		{
-			"origin"	"4700 -8228 3292"
-			"targetname"  "maphack_runner"
-			"spawnflags"  "516"
-      "physdamagescale" "1.0"
-      "renderamt"   "255"
-      "rendercolor" "255 255 255"
+		
+		$increment { "var" "loop_count" }
+		
+		$if
+		{ "cond" "loop_count < i_z_limit20"
+      "entities"
+      {
+        $trigger { "event" "EventRecursiveTest" }
+      }
 		}
 	}
 }
