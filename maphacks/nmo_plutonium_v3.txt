@@ -1,0 +1,54 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+        "spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+  }
+	"entities"
+	{
+		$edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+        "spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+	}
+}
