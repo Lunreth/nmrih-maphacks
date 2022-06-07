@@ -17,19 +17,6 @@
       "origin"	"0 0 64"
       "targetname"  "tonemap_control"
     }
-    "logic_auto"
-    {
-      "origin"	"0 0 32"
-      "keyvalues"
-      {
-        "spawnflags"  "1"
-        "connections"
-        {
-          "OnMapSpawn" "tonemap_control,SetAutoExposureMax,0.4,0,-1"
-          "OnMapSpawn" "tonemap_control,SetAutoExposureMin,0.2,0,-1"
-        }
-      }
-    }
 	}
 	
 	"entities"

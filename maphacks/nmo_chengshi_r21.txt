@@ -3,37 +3,6 @@
 {
 	"entities"
 	{
-    $modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "30"
-        "runner_chance" "7.0"
-				"ignore_visibility" "1"
-			}
-		}
-		$edit_all
-		{
-			"classname" "func_zombie_spawn"
-			"keyvalues"
-			{
-				"spawn_density" "30"
-				"runner_chance" "7.0"
-				"ignore_visibility" "1"
-			}
-		}
-		$edit_all
-		{
-			"classname" "npc_template_maker"
-			"keyvalues"
-			{
-        "MaxNPCCount"     "20"
-			}
-		}
 		$modify
 		{
 			"match"
