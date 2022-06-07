@@ -1,0 +1,34 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "obj1"
+			}
+			"replace"
+			{
+        "GlowEntity1Name"   "empty"
+				"GlowEntity1Color"  "51 0 204"
+			}
+		}
+	}
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "obj1"
+			}
+			"replace"
+			{
+        "GlowEntity1Name"   "empty"
+				"GlowEntity1Color"  "51 0 204"
+			}
+		}
+	}
+}
