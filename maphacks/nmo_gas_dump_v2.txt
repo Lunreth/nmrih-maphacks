@@ -1,0 +1,62 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+    "EventGameEvent"
+		{
+			"type"	"EVENT_GAMEEVENT"
+			"eventname"	"nmrih_reset_map"
+		}
+  }
+  
+	"pre_entities"
+	{
+    "env_tonemap_controller"
+    {
+      "origin"	"0 0 64"
+      "targetname"  "tonemap_control"
+    }
+    "logic_auto"
+    {
+      "origin"	"0 0 32"
+      "keyvalues"
+      {
+        "spawnflags"  "1"
+        "connections"
+        {
+          "OnMapSpawn" "tonemap_control,SetAutoExposureMax,0.4,0,-1"
+          "OnMapSpawn" "tonemap_control,SetAutoExposureMin,0.2,0,-1"
+        }
+      }
+    }
+	}
+	
+	"entities"
+	{
+    "env_tonemap_controller"
+    {
+      "origin"	"0 0 64"
+      "targetname"  "tonemap_control"
+    }
+	}
+	
+	"EventGameEvent"
+	{
+		$console { "msg" "EventGameEvent" }
+		$fire
+		{
+			"targetname" "tonemap_control"
+			"input" "SetAutoExposureMax"
+			"value" "0.4"
+			"type"	"float"
+		}
+		$fire
+		{
+			"targetname" "tonemap_control"
+			"input" "SetAutoExposureMin"
+			"value" "0.2"
+			"type"	"float"
+		}
+  }
+}
