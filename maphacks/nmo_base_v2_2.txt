@@ -1,0 +1,23 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"lob_tecal4"
+			"output"	"OnObjectiveBegin"
+		}
+  }
+	
+	"EventOutput"
+	{
+		$fire { "targetname" "lod_dt_y" "input" "Open" }
+		$fire { "targetname" "AutoInstance1-shi_dt_k_CF" "input" "Press" }
+		$fire { "targetname" "lod_dt_y" "input" "SetSpeed" "value" "70.0" }
+		$fire { "targetname" "lod_dt_y" "input" "Open" }
+	}
+}
