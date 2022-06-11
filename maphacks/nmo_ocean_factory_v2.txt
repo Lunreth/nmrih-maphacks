@@ -39,7 +39,10 @@
 			}
 			"replace"
 			{
-        "farz"  "2048"
+        "farz"  "1592"
+        "fogcolor"  "191 191 191"
+        "fogstart"  "128"
+        "fogend"  "1024"
 			}
 		}
     
@@ -48,7 +51,10 @@
       "classname"  "env_fog_controller"
       "keyvalues"
       {
-        "farz"  "2048"
+        "farz"  "1592"
+        "fogcolor"  "191 191 191"
+        "fogstart"  "128"
+        "fogend"  "1024"
       }
     }
   }
@@ -76,7 +82,10 @@
 			}
 			"replace"
 			{
-        "farz"  "2048"
+        "farz"  "1592"
+        "fogcolor"  "191 191 191"
+        "fogstart"  "128"
+        "fogend"  "1024"
 			}
 		}
     $edit_all
@@ -84,7 +93,10 @@
       "classname"  "env_fog_controller"
       "keyvalues"
       {
-        "farz"  "2048"
+        "farz"  "1592"
+        "fogcolor"  "191 191 191"
+        "fogstart"  "128"
+        "fogend"  "1024"
       }
     }
 	}
