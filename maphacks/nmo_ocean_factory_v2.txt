@@ -1,0 +1,103 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+    "EventGameEvent"
+		{
+			"type"	"EVENT_GAMEEVENT"
+			"eventname"	"nmrih_round_begin"
+		}
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"objective4"
+			"output"	"OnObjectiveBegin"
+		}
+  }
+  
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"id" "151558"
+			}
+			"replace"
+			{
+        "spawnflags"  "10240"
+        "targetname"  "new_door_respawn"
+			}
+		}
+    
+    $modify
+		{
+      "match"
+			{
+				"classname"  "env_fog_controller"
+			}
+			"replace"
+			{
+        "farz"  "2048"
+			}
+		}
+    
+    $edit_all
+    {
+      "classname"  "env_fog_controller"
+      "keyvalues"
+      {
+        "farz"  "2048"
+      }
+    }
+  }
+  // ENTITY EDITOR
+	"entities"
+	{
+    $modify
+		{
+      "match"
+			{
+				"id" "151558"
+			}
+			"replace"
+			{
+        "targetname"  "new_door_respawn"
+        "spawnflags"  "10240"
+			}
+		}
+		
+    $modify
+		{
+      "match"
+			{
+				"classname"  "env_fog_controller"
+			}
+			"replace"
+			{
+        "farz"  "2048"
+			}
+		}
+    $edit_all
+    {
+      "classname"  "env_fog_controller"
+      "keyvalues"
+      {
+        "farz"  "2048"
+      }
+    }
+	}
+	
+	"EventGameEvent"
+	{
+    $fire { "targetname" "respawnplayer" "input" "InputEnable" }
+		$console { "msg" "EventGameEvent" }
+  }
+  "EventOutput"
+  {
+    $fire { "targetname" "new_door_respawn" "input" "Unlock" }
+    $fire { "targetname" "new_door_respawn" "input" "Open" }
+    $console { "msg" "EventOutput" }
+  }
+}
