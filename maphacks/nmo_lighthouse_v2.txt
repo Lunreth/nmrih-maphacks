@@ -1,34 +1,16 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  // PRECACHE BLOCKING PROP
+  "precache"
+  {
+    "model"		"models/tmp_mod/island_crate1_2.mdl"
+  }
   // ENTITY EDITOR
   "pre_entities"
 	{
     $remove { "targetname" "mountain_zombies_ext" }
     $remove { "targetname" "mountain_spawner_3" }
-    $remove_all
-		{
-			"model" "models/props_junk/wood_pallet001a.mdl"
-		}
-		$remove_all
-		{
-			"model" "models/props_borealis/bluebarrel002.mdl"
-		}
-    $remove { "id" "14761" }
-    $remove { "id" "14758" }
-    $remove { "id" "14760" }
-    $remove { "id" "14784" }
-    $remove { "id" "14783" }
-    $remove { "id" "14759" }
-    $remove { "id" "14781" }
-    $remove { "id" "14761" }
-    $remove { "id" "12733" }
-    $remove { "id" "12734" }
-    $remove { "id" "13397" }
-    $remove { "id" "14762" }
-    $remove { "id" "14763" }
-    $remove { "id" "14777" }
-    $remove { "id" "14778" }
 		$modify
 		{
       "match"
@@ -48,7 +30,83 @@
 				"use_length"    "4"
 			}
 		}
-		// REMOVE OLD CONNECTIONS
+		// BLOCKING PROPS COPY
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "144 5762 -752"
+      "angles"                "0 0 90"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_2"
+      "origin"                "-128 1440 -626"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_3"
+      "origin"                "-128 1280 -626"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_4"
+      "origin"                "-128 1440 -578"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_5"
+      "origin"                "-128 1280 -578"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+	}
+	"entities"
+	{
+    $remove { "targetname" "mountain_zombies_ext" }
+    $remove { "targetname" "mountain_spawner_3" }
+    // REMOVE OLD CONNECTIONS
     $remove_connections { "targetname" "runners_door_1" }
     $remove_connections { "targetname" "runners_door_2" }
     $remove_connections { "targetname" "runners_door_4" }
@@ -56,7 +114,7 @@
     $remove_connections { "targetname" "runners_door_5_1" }
     $remove_connections { "targetname" "runners_door_3" }
     $remove_connections { "targetname" "runners_door_5_0" }
-    // ADD THEM AGAIN PLUS NEW ONES
+    // EDITING CONNECTIONS
     $edit
     {
         "targetname"  "runners_door_1"
@@ -197,34 +255,6 @@
             }
         }
     }
-	}
-	"entities"
-	{
-    $remove { "targetname" "mountain_zombies_ext" }
-    $remove { "targetname" "mountain_spawner_3" }
-    $remove_all
-		{
-			"model" "models/props_junk/wood_pallet001a.mdl"
-		}
-		$remove_all
-		{
-			"model" "models/props_borealis/bluebarrel002.mdl"
-		}
-    $remove { "id" "14761" }
-    $remove { "id" "14758" }
-    $remove { "id" "14760" }
-    $remove { "id" "14784" }
-    $remove { "id" "14783" }
-    $remove { "id" "14759" }
-    $remove { "id" "14781" }
-    $remove { "id" "14761" }
-    $remove { "id" "12733" }
-    $remove { "id" "12734" }
-    $remove { "id" "13397" }
-    $remove { "id" "14762" }
-    $remove { "id" "14763" }
-    $remove { "id" "14777" }
-    $remove { "id" "14778" }
 		"me_sledge"
 		{
 			"origin"	"1152 -1963 -1000"
@@ -275,6 +305,78 @@
 			{
 				"use_length"    "4"
 			}
+		}
+		// BLOCKING PROPS 120X60X60
+    // ORIGIN CENTRADO
+    "prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "144 5762 -752"
+      "angles"                "0 0 90"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_2"
+      "origin"                "-128 1440 -626"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_3"
+      "origin"                "-128 1280 -626"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_4"
+      "origin"                "-128 1440 -578"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_5"
+      "origin"                "-128 1280 -578"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
 		}
 	}
 }

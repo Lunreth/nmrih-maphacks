@@ -1,0 +1,14 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+    $remove { "targetname" "2_suicide1_trigger" }
+	}
+	"entities"
+	{
+    $remove { "targetname" "2_suicide1_trigger" }
+	}
+}

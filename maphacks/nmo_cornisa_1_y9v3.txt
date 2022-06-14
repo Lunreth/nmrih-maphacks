@@ -3,6 +3,10 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "precache"
+  {
+    "model"		"models/props/container1.mdl"
+  }
 	"entities"
 	{
 		"prop_physics"
@@ -44,6 +48,146 @@
 			{
 				"model"			"models/props_c17/oildrum001.mdl"
 			}
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "-1631 -158 595"
+      "angles"                "0 270 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_2"
+      "origin"                "-1631 -158 707"
+      "angles"                "0 270 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_3"
+      "origin"                "-1506 97 595"
+      "angles"                "0 0 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_4"
+      "origin"                "-1506 97 707"
+      "angles"                "0 0 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_5"
+      "origin"                "-1138 240 595"
+      "angles"                "0 15 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_6"
+      "origin"                "-1138 240 707"
+      "angles"                "0 15 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_7"
+      "origin"                "-753 305 595"
+      "angles"                "0 345 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_8"
+      "origin"                "-753 305 707"
+      "angles"                "0 345 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_9"
+      "origin"                "-370 209 595"
+      "angles"                "0 0 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_10"
+      "origin"                "-370 209 707"
+      "angles"                "0 0 0"
+      "model"                 "models/props/container1.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
 		}
 	}
 }

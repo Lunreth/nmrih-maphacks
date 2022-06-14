@@ -1,6 +1,10 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "precache"
+  {
+    "model"		"models/tmp_mod/island_crate1_2.mdl"
+  }
 	"entities"
 	{
     $modify
@@ -29,6 +33,20 @@
         "UpperRandomBound"   "7"
         "LowerRandomBound"   "6"
 			}
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "-3672 1376 -146"
+      "angles"                "0 255 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
 		}
 	}
 }

@@ -3,29 +3,20 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  // PRECACHE BLOCKING PROP
   "precache"
   {
-    "model"		"models/props/container1.mdl"
+    "model"		"models/tmp_mod/island_crate1_2.mdl"
   }
-  "entities"
-  {
-		$modify
-		{
-      "match"
-			{
-				"targetname"  "mine_combodoor_counter"
-			}
-			"replace"
-			{
-        "max"	  "1"
-			}
-		}
-		"prop_dynamic_override"
+  // BLOCKING PROPS COPY
+  "pre_entities"
+	{
+    "prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "4989 -3569 610"
-      "angles"                "90 0 0"
-      "model"                 "models/props/container1.mdl"
+      "origin"                "-3408 2240 14"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"
@@ -37,9 +28,9 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_2"
-      "origin"                "4770 -3557 610"
-      "angles"                "90 0 0"
-      "model"                 "models/props/container1.mdl"
+      "origin"                "-3408 2240 70"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"
@@ -51,9 +42,28 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_3"
-      "origin"                "4707 -3551 594"
-      "angles"                "90 0 0"
-      "model"                 "models/props/container1.mdl"
+      "origin"                "-3408 2240 126"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+	}
+	"entities"
+	{
+    // BLOCKING PROPS 120X60X60
+    // ORIGIN CENTRADO
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "-3408 2240 14"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"
@@ -64,10 +74,10 @@
 		}
 		"prop_dynamic_override"
 		{
-      "targetname"            "prop_ll_block_4"
-      "origin"                "4099 -3695 594"
-      "angles"                "90 0 0"
-      "model"                 "models/props/container1.mdl"
+      "targetname"            "prop_ll_block_2"
+      "origin"                "-3408 2240 70"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"
@@ -78,10 +88,10 @@
 		}
 		"prop_dynamic_override"
 		{
-      "targetname"            "prop_ll_block_5"
-      "origin"                "4099 -3567 594"
-      "angles"                "90 0 0"
-      "model"                 "models/props/container1.mdl"
+      "targetname"            "prop_ll_block_3"
+      "origin"                "-3408 2240 126"
+      "angles"                "0 0 0"
+      "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"
@@ -90,5 +100,5 @@
       "fademindist"           "1"
       "fademaxdist"           "2"
 		}
-  }
+	}
 }

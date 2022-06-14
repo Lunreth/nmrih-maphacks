@@ -3,65 +3,19 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  // PRECACHE BLOCKING PROP
   "precache"
   {
     "model"		"models/tmp_mod/island_crate1_2.mdl"
   }
+  // BLOCKING PROPS COPY
   "pre_entities"
-  {
-    $modify
-		{
-			"match"
-			{
-				"targetname" "timer_trap"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "30"
-				"LowerRandomBound" "25"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timer_horde_final"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "14"
-				"LowerRandomBound" "10"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timerfinal1"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "21"
-				"LowerRandomBound" "14"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timerfinal2"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "20"
-				"LowerRandomBound" "15"
-			}
-		}
-		"prop_dynamic_override"
+	{
+    "prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "-16 3394 304"
-      "angles"                "0 0 90"
+      "origin"                "976 3376 286"
+      "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
@@ -74,8 +28,8 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_2"
-      "origin"                "-144 3394 304"
-      "angles"                "0 0 90"
+      "origin"                "976 3376 350"
+      "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
@@ -85,62 +39,16 @@
       "fademindist"           "1"
       "fademaxdist"           "2"
 		}
-  }
+	}
 	"entities"
 	{
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timer_trap"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "30"
-				"LowerRandomBound" "25"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timer_horde_final"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "14"
-				"LowerRandomBound" "10"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timerfinal1"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "21"
-				"LowerRandomBound" "14"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"targetname" "timerfinal2"
-			}
-			"replace"
-			{
-				"UpperRandomBound" "20"
-				"LowerRandomBound" "15"
-			}
-		}
+    // BLOCKING PROPS 120X60X60
+    // ORIGIN CENTRADO
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "-16 3394 304"
-      "angles"                "0 0 90"
+      "origin"                "976 3376 286"
+      "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
@@ -153,8 +61,8 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_2"
-      "origin"                "-144 3394 304"
-      "angles"                "0 0 90"
+      "origin"                "976 3376 350"
+      "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"

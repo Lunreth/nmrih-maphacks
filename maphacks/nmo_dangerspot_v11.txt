@@ -98,6 +98,17 @@
         "MaxLiveChildren"   "2"
 			}
 		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "TZT01"
+			}
+			"replace"
+			{
+        "SpawnFrequency"   "20"
+			}
+		}
   }
   "entities"
   {
@@ -158,6 +169,17 @@
 			"replace"
 			{
         "MaxLiveChildren"   "2"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"   "TZT01"
+			}
+			"replace"
+			{
+        "SpawnFrequency"   "20"
 			}
 		}
 		"prop_physics"
