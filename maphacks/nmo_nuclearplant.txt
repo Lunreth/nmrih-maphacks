@@ -1,0 +1,32 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  // ENTITY EDITOR
+	"entities"
+	{
+		"me_wrench"
+		{
+			"origin"	"-8 242 72"
+		}
+		"me_wrench"
+		{
+			"origin"	"32 242 72"
+		}
+		"me_wrench"
+		{
+			"origin"	"-24 242 72"
+		}
+		"me_wrench"
+		{
+			"origin"	"-8 180 72"
+		}
+		"me_wrench"
+		{
+			"origin"	"-32 160 72"
+		}
+		"me_wrench"
+		{
+			"origin"	"-8 160 72"
+		}
+	}
+}
