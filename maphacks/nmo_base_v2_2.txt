@@ -12,6 +12,36 @@
 			"output"	"OnObjectiveBegin"
 		}
   }
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "lob_shanghai_q"
+			}
+			"replace"
+			{
+        "damage"     "10"
+        "damagemodel" "0"
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"  "lob_shanghai_q"
+			}
+			"replace"
+			{
+        "damage"     "10"
+        "damagemodel" "0"
+			}
+		}
+  }
 	
 	"EventOutput"
 	{

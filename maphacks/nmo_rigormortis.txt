@@ -3,6 +3,15 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "events"
+  {
+		"EventOutput"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"fuel_obj"
+			"output"	"OnObjectiveBegin"
+		}
+  }
   "pre_entities"
 	{
 		$modify
@@ -24,6 +33,7 @@
 				"GlowEntity9Color"  "0 128 0"
 			}
 		}
+		
 		$modify
 		{
 			"match"
@@ -36,6 +46,7 @@
 				"physicsmode" "1"
 			}
 		}
+		
 		$modify
 		{
 			"match"
@@ -69,6 +80,7 @@
 				"GlowEntity9Color"  "0 128 0"
 			}
 		}
+		
 		$modify
 		{
 			"match"
@@ -81,6 +93,7 @@
 				"physicsmode" "1"
 			}
 		}
+		
 		$modify
 		{
 			"match"
@@ -90,6 +103,23 @@
 			"replace"
 			{
 				"classname"   "prop_ragdoll_multiplayer"
+			}
+		}
+	}
+	"EventOutput"
+	{
+    $modify
+		{
+			"match"
+			{
+				"targetname" "fuel_mdl"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "0 128 0"
 			}
 		}
 	}
