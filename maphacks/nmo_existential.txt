@@ -7,9 +7,29 @@
   {
     "material"		"prop_idbs/gmi_hunt/gmi_sprcpoint"
   }
+  "events"
+  {
+    "EventGameEvent"
+		{
+			"type"	"EVENT_GAMEEVENT"
+			"eventname"	"nmrih_round_begin"
+		}
+		"EventOutput1"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"key1"
+			"output"	"OnPlayerPickup"
+		}
+		"EventOutput2"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"sneaky door"
+			"output"	"OnFullyOpen"
+		}
+  }
   "pre_entities"
-	{
-		$modify
+  {
+    $modify
 		{
 			"match"
 			{
@@ -20,9 +40,67 @@
 				"glowable"    "1"
 				"glowblip"    "1"
 				"glowdistance"    "9999"
-				"glowcolor"    "255 128 0"
+				"glowcolor"    "250 128 0"
 			}
 		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "key1"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "0 128 250"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"classname" "func_zombie_spawn"
+			}
+			"replace"
+			{
+				"spawn_density"       "10.0"
+				"spawn_regen_target"  "1.0"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "sneaky door"
+			}
+			"replace"
+			{
+				"origin"    "-1320 -1157 54"
+				"axis"    "-1320 -1157 54, -1320 -1157 72"
+			}
+		}
+  }
+  "entities"
+  {
+    "nmrih_objective_boundary"
+		{
+      "targetname"            "escape"
+      "origin"                "-1832 -1394 16"
+		}
+		"nmrih_objective_boundary"
+		{
+      "targetname"            "fear_frame fonded"
+      "origin"                "-1832 -1432 16"
+      "GlowEntity1Name"       "sneaky door"
+      "GlowEntity1Color"      "255 0 0"
+		}
+  }
+	
+	"EventGameEvent"
+	{
+		$console { "msg" "Maphack loaded for nmo_existential" }
 		"env_sprite"
 		{
       "targetname"            "ll_sprite_1"
@@ -32,35 +110,56 @@
       "renderamt"             "128"
       "disablereceiveshadows" "1"
       "scale"                 "0.6"
-      "spawnflags"                 "1"
+      "spawnflags"            "1"
 		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -10"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -9"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -8"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -7"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -6"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -5"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -4"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -3"
+		}
+		"me_crowbar"
+		{
+      "origin"                "-3234 -765 -2"
+		}
+  }
+  "EventOutput1"
+	{
+    $fire { "targetname" "key1" "input" "Kill" }
+    $fire { "targetname" "sneaky door" "input" "Unlock" }
+    $fire { "targetname" "sneaky door" "input" "Open" }
+		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
+		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
 	}
-	"entities"
+	"EventOutput2"
 	{
-		$modify
-		{
-			"match"
-			{
-				"targetname" "fear_frame"
-			}
-			"replace"
-			{
-				"glowable"    "1"
-				"glowblip"    "1"
-				"glowdistance"    "9999"
-				"glowcolor"    "255 128 0"
-			}
-		}
-		"env_sprite"
-		{
-      "targetname"            "ll_sprite_1"
-      "origin"                "-1712 -1456 42"
-      "model"                 "prop_idbs/gmi_hunt/gmi_sprcpoint.vmt"
-      "rendermode"            "5"
-      "renderamt"             "128"
-      "disablereceiveshadows" "1"
-      "scale"                 "0.6"
-      "spawnflags"                 "1"
-		}
+		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
+		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
 	}
 }
