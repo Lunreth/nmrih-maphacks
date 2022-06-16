@@ -1,0 +1,66 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "precache"
+  {
+    "material"		"prop_idbs/gmi_hunt/gmi_sprcpoint"
+  }
+  "pre_entities"
+	{
+		$modify
+		{
+			"match"
+			{
+				"targetname" "fear_frame"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "255 128 0"
+			}
+		}
+		"env_sprite"
+		{
+      "targetname"            "ll_sprite_1"
+      "origin"                "-1712 -1456 42"
+      "model"                 "prop_idbs/gmi_hunt/gmi_sprcpoint.vmt"
+      "rendermode"            "5"
+      "renderamt"             "128"
+      "disablereceiveshadows" "1"
+      "scale"                 "0.6"
+      "spawnflags"                 "1"
+		}
+	}
+	"entities"
+	{
+		$modify
+		{
+			"match"
+			{
+				"targetname" "fear_frame"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "255 128 0"
+			}
+		}
+		"env_sprite"
+		{
+      "targetname"            "ll_sprite_1"
+      "origin"                "-1712 -1456 42"
+      "model"                 "prop_idbs/gmi_hunt/gmi_sprcpoint.vmt"
+      "rendermode"            "5"
+      "renderamt"             "128"
+      "disablereceiveshadows" "1"
+      "scale"                 "0.6"
+      "spawnflags"                 "1"
+		}
+	}
+}
