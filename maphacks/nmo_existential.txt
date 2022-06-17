@@ -26,6 +26,12 @@
 			"targetname"	"sneaky door"
 			"output"	"OnFullyOpen"
 		}
+		"EventOutput3"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"fear_frame"
+			"output"	"OnPlayerPickup"
+		}
   }
   "pre_entities"
   {
@@ -55,6 +61,17 @@
 				"glowblip"    "1"
 				"glowdistance"    "9999"
 				"glowcolor"    "0 128 250"
+			}
+		}
+		$modify
+		{
+			"match"
+			{
+				"targetname" "pazzle"
+			}
+			"replace"
+			{
+				"extracttime"    "600.0"
 			}
 		}
 		$modify
@@ -161,5 +178,22 @@
 	{
 		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
 		$fire { "targetname" "fear_frame fonded" "input" "ObjectiveComplete" }
+	}
+	"EventOutput3"
+	{
+    $fire { "targetname" "fear_frame" "input" "Kill" }
+    "prop_physics"
+		{
+      "targetname"            "fear_frame"
+      "origin"                "-1712 -1456 42"
+      "model"                 "models/props_lab/frame002a.mdl"
+      "spawnflags"            "772"
+		}
+    $fire { "targetname" "light" "input" "TurnOn" }
+    $fire { "targetname" "nightlight" "input" "TurnOn" }
+    $fire { "targetname" "nightalarm" "input" "PlaySound" }
+		$fire { "targetname" "escape" "input" "ObjectiveComplete" }
+		$fire { "targetname" "pazzle" "input" "Start" }
+		$fire { "targetname" "alarm door2" "input" "Break" }
 	}
 }
