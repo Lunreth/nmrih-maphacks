@@ -30,77 +30,6 @@
 				"use_length"    "4"
 			}
 		}
-		// BLOCKING PROPS COPY
-		"prop_dynamic_override"
-		{
-      "targetname"            "prop_ll_block_1"
-      "origin"                "144 5762 -790"
-      "angles"                "0 0 90"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
-      "rendermode"            "2"
-      "renderamt"             "0"
-      "solid"                 "6"
-      "disableshadows"        "1"
-      "disablereceiveshadows" "1"
-      "fademindist"           "1"
-      "fademaxdist"           "2"
-		}
-		"prop_dynamic_override"
-		{
-      "targetname"            "prop_ll_block_2"
-      "origin"                "-128 1440 -640"
-      "angles"                "0 0 0"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
-      "rendermode"            "2"
-      "renderamt"             "0"
-      "solid"                 "6"
-      "disableshadows"        "1"
-      "disablereceiveshadows" "1"
-      "fademindist"           "1"
-      "fademaxdist"           "2"
-		}
-		"prop_dynamic_override"
-		{
-      "targetname"            "prop_ll_block_3"
-      "origin"                "-128 1280 -640"
-      "angles"                "0 0 0"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
-      "rendermode"            "2"
-      "renderamt"             "0"
-      "solid"                 "6"
-      "disableshadows"        "1"
-      "disablereceiveshadows" "1"
-      "fademindist"           "1"
-      "fademaxdist"           "2"
-		}
-		"prop_dynamic_override"
-		{
-      "targetname"            "prop_ll_block_4"
-      "origin"                "-128 1440 -578"
-      "angles"                "0 0 0"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
-      "rendermode"            "2"
-      "renderamt"             "0"
-      "solid"                 "6"
-      "disableshadows"        "1"
-      "disablereceiveshadows" "1"
-      "fademindist"           "1"
-      "fademaxdist"           "2"
-		}
-		"prop_dynamic_override"
-		{
-      "targetname"            "prop_ll_block_5"
-      "origin"                "-128 1280 -578"
-      "angles"                "0 0 0"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
-      "rendermode"            "2"
-      "renderamt"             "0"
-      "solid"                 "6"
-      "disableshadows"        "1"
-      "disablereceiveshadows" "1"
-      "fademindist"           "1"
-      "fademaxdist"           "2"
-		}
 	}
 	"entities"
 	{
@@ -311,8 +240,8 @@
     "prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "144 5762 -752"
-      "angles"                "0 0 90"
+      "origin"                "144 5762 -786"
+      "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
