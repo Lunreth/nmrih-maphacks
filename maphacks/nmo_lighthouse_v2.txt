@@ -34,7 +34,7 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "144 5762 -752"
+      "origin"                "144 5762 -790"
       "angles"                "0 0 90"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
@@ -48,7 +48,7 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_2"
-      "origin"                "-128 1440 -626"
+      "origin"                "-128 1440 -640"
       "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
@@ -62,7 +62,7 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_3"
-      "origin"                "-128 1280 -626"
+      "origin"                "-128 1280 -640"
       "angles"                "0 0 0"
       "model"                 "models/tmp_mod/island_crate1_2.mdl"
       "rendermode"            "2"
