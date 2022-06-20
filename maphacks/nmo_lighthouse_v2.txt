@@ -30,6 +30,17 @@
 				"use_length"    "4"
 			}
 		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "mountain_spawner_1"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "16"
+			}
+		}
 	}
 	"entities"
 	{
@@ -225,6 +236,17 @@
 			"replace"
 			{
         "use_length"    "4"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "mountain_spawner_1"
+			}
+			"replace"
+			{
+        "MaxLiveChildren"    "16"
 			}
 		}
 		$edit_all
