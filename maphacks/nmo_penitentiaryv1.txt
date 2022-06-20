@@ -7,6 +7,17 @@
 		{
 			"match"
 			{
+				"targetname" "doorslide2"
+			}
+			"replace"
+			{
+        "spawnpos" "0"
+			}
+		}
+    $modify
+		{
+			"match"
+			{
 				"classname" "func_zombie_spawn"
 			}
 			"replace"
@@ -27,6 +38,17 @@
 	}
 	"entities"
 	{
+    $modify
+		{
+			"match"
+			{
+				"targetname" "doorslide2"
+			}
+			"replace"
+			{
+        "spawnpos" "0"
+			}
+		}
     $modify
 		{
 			"match"
