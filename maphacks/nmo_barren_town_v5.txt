@@ -3,6 +3,10 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "precache"
+  {
+    "model"		"static/casino_coin.mdl"
+  }
   "pre_entities"
   {
     $modify
@@ -14,6 +18,17 @@
 			"replace"
 			{
         "use_length"    "5"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "coin"
+			}
+			"replace"
+			{
+        "model"    "models/static/casino_coin.mdl"
 			}
 		}
 		$modify
@@ -37,6 +52,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -49,6 +65,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -61,6 +78,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -73,6 +91,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -85,6 +104,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -97,6 +117,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -109,6 +130,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
     $modify
@@ -170,11 +192,23 @@
 		{
       "match"
 			{
+				"targetname"  "coin"
+			}
+			"replace"
+			{
+        "model"    "models/static/casino_coin.mdl"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
 				"TemplateName"  "runner"
 			}
 			"replace"
 			{
         "MaxLiveChildren"    "6"
+        "SpawnFrequency"    "20"
 			}
 		}
 		$modify
@@ -186,6 +220,7 @@
 			"replace"
 			{
         "MaxLiveChildren"    "6"
+        "SpawnFrequency"    "20"
 			}
 		}
 		$modify
@@ -209,6 +244,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -221,6 +257,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -233,6 +270,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -245,6 +283,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -257,6 +296,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify
@@ -269,6 +309,7 @@
 			{
         "MaxNPCCount"    "2"
         "MaxLiveChildren"    "1"
+        "SpawnFrequency"    "12"
 			}
 		}
 		$modify

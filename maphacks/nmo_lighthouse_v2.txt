@@ -9,6 +9,7 @@
   // ENTITY EDITOR
   "pre_entities"
 	{
+    $remove { "targetname" "sign_physbox" }
     $remove { "targetname" "mountain_zombies_ext" }
     $remove { "targetname" "mountain_spawner_3" }
 		$modify
@@ -44,6 +45,7 @@
 	}
 	"entities"
 	{
+    $remove { "targetname" "sign_physbox" }
     $remove { "targetname" "mountain_zombies_ext" }
     $remove { "targetname" "mountain_spawner_3" }
     // REMOVE OLD CONNECTIONS
