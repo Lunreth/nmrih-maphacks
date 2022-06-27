@@ -1,0 +1,114 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"   "spawn_start_2"
+			}
+			"replace"
+			{
+        "spawnflags"   "1"
+			}
+		}
+		$edit_all
+		{
+			"targetname"	"spawn_start_2"
+			"keyvalues"
+			{
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"  "trigger_progress_use"
+			}
+			"replace"
+			{
+        "use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"  "trigger_progress_use"
+			"keyvalues"
+			{
+				"use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"	"npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"15"
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+      "match"
+			{
+				"targetname"   "spawn_start_2"
+			}
+			"replace"
+			{
+        "spawnflags"   "1"
+			}
+		}
+		$edit_all
+		{
+			"targetname"	"spawn_start_2"
+			"keyvalues"
+			{
+				"spawnflags"		"1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"classname"  "trigger_progress_use"
+			}
+			"replace"
+			{
+        "use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"  "trigger_progress_use"
+			"keyvalues"
+			{
+				"use_length"    "4"
+			}
+		}
+		$edit_all
+		{
+			"classname"	"npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"15"
+			}
+		}
+		"me_machete"
+		{
+      "origin"  "200 2084 39"
+		}
+		"me_hatchet"
+		{
+      "origin"  "572 2286 14"
+		}
+		"me_hatchet"
+		{
+      "origin"  "600 2286 14"
+		}
+  }
+}
