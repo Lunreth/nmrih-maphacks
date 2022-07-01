@@ -12,21 +12,6 @@
 			"output"	"OnObjectiveBegin"
 		}
   }
-  "pre_entities"
-  {
-    $modify
-		{
-      "match"
-			{
-				"targetname"  "lob_shanghai_q"
-			}
-			"replace"
-			{
-        "damage"     "10"
-        "damagemodel" "0"
-			}
-		}
-  }
   "entities"
   {
     $modify
@@ -37,12 +22,10 @@
 			}
 			"replace"
 			{
-        "damage"     "10"
-        "damagemodel" "0"
+        "damage"     "5"
 			}
 		}
   }
-	
 	"EventOutput"
 	{
 		$fire { "targetname" "lod_dt_y" "input" "Open" }
