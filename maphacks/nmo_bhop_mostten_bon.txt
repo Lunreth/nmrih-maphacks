@@ -1,0 +1,29 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+	"entities"
+	{
+		"prop_physics"
+		{
+			"targetname"	"prop_climb1"
+			"origin"	    "-320 -1668 182"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props_c17/oildrum001.mdl"
+			}
+		}
+		"prop_physics"
+		{
+			"targetname"	"prop_climb2"
+			"origin"	    "15 -1546 182"
+			"angles"	    "0 0 0"
+			"keyvalues"
+			{
+				"model"			"models/props_c17/oildrum001.mdl"
+			}
+		}
+	}
+}

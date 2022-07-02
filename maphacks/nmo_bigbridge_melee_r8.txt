@@ -4,27 +4,20 @@
 "MapHack"
 {
 	"entities"
-	{
-		$modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
-			}
-		}
-		$edit_all
+  {
+    $edit_all
 		{
 			"classname" "func_zombie_spawn"
 			"keyvalues"
 			{
-				"spawn_density" "10.0"
+				"spawn_density"      "10.0"
 				"spawn_regen_target" "1.0"
+				"spawnflags"          "0"
 			}
 		}
+  }
+  "entities"
+	{
+		$remove { "targetname" "2468" }
 	}
 }

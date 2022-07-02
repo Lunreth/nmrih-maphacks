@@ -105,6 +105,8 @@
 		{
       "targetname"            "escape"
       "origin"                "-1832 -1394 16"
+      "GlowEntity1Name"       "alarm door"
+      "GlowEntity1Color"      "128 60 254"
 		}
 		"nmrih_objective_boundary"
 		{

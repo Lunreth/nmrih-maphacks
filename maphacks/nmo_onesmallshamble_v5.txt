@@ -10,30 +10,6 @@
 			"output"	"OnObjectiveEnd"
 		}
   }
-  "pre_entities"
-	{
-    $modify
-		{
-			"match"
-			{
-				"targetname" "Destroy reactor"
-			}
-			"replace"
-			{
-        "GlowEntity3Name" "Dinamit_Item"
-				"GlowEntity3Color" "0 255 0"
-			}
-		}
-		$edit_all
-		{
-			"targetname" "Destroy reactor"
-			"keyvalues"
-			{
-        "GlowEntity3Name" "Dinamit_Item"
-				"GlowEntity3Color" "0 255 0"
-			}
-		}
-	}
 	"entities"
 	{
     $modify

@@ -42,7 +42,7 @@
 			"keyvalues"
 			{
         "min"   "0"
-        "max"   "99"
+        "max"   "119"
 			}
 		}
 		$edit

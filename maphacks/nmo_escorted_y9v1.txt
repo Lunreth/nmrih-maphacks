@@ -9,7 +9,7 @@
 		{
       "match"
 			{
-				"targetname"  "survivor1"
+				"targetname"  "suvivor1"
 			}
 			"replace"
 			{
@@ -21,7 +21,19 @@
 		{
       "match"
 			{
-				"targetname"  "survivor"
+				"targetname"  "suvivor2"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "suvivor"
 			}
 			"replace"
 			{
@@ -40,21 +52,37 @@
         "dmg"       "1"
 			}
 		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "tracktrain_survivor2"
+			}
+			"replace"
+			{
+        "dmg"       "1"
+			}
+		}
 	}
 	"entities"
 	{
-		// SPAWNS A SHAMBLER
 		"npc_nmrih_shamblerzombie"
 		{
 			"targetname"	"shambler_house"
 			"origin"	    "-2328 -2144 64"
 			"angles"	    "0 0 0"
 		}
+		"npc_nmrih_shamblerzombie"
+		{
+			"targetname"	"shambler_clean"
+			"origin"	    "2284 90 64"
+			"angles"	    "0 0 0"
+		}
 		$modify
 		{
       "match"
 			{
-				"targetname"  "survivor1"
+				"targetname"  "suvivor1"
 			}
 			"replace"
 			{
@@ -66,7 +94,19 @@
 		{
       "match"
 			{
-				"targetname"  "survivor"
+				"targetname"  "suvivor2"
+			}
+			"replace"
+			{
+        "solid"       "0"
+        "spawnflags"  "256"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "suvivor"
 			}
 			"replace"
 			{
@@ -79,6 +119,17 @@
       "match"
 			{
 				"targetname"  "tracktrain_survivor"
+			}
+			"replace"
+			{
+        "dmg"       "1"
+			}
+		}
+		$modify
+		{
+      "match"
+			{
+				"targetname"  "tracktrain_survivor2"
 			}
 			"replace"
 			{

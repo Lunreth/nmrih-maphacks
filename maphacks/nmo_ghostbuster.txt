@@ -1,0 +1,13 @@
+"Maphack"
+{
+	"includes"
+	{
+		"file"	"maps/maphacks/nmo_ghostbuster.extra.txt"
+	}
+
+	"entities"
+	{
+		$fire { "targetname" "extrcam" "input" "Enable" }
+		$fire { "targetname" "extrcam" "input" "Disable" }
+	}
+}

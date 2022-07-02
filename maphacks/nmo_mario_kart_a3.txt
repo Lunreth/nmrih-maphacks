@@ -3,7 +3,7 @@
 {
   "pre_entities"
   {
-    //$remove { "targetname" "command" }
+    $remove { "targetname" "command" }
     $remove_connections { "targetname" "tele_case" }
     $modify
 		{
@@ -205,6 +205,6 @@
 		}
 		$remove { "targetname" "windmillrot" }
 		$remove { "targetname" "windmilltele" }
-		//$remove { "targetname" "command" }
+		$remove { "targetname" "command" }
   }
 }

@@ -1,0 +1,150 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+	{
+    "env_fire"
+		{
+			"origin"	"98 84 128"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-112 80 116"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-88 72 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"72 80 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-100 82 80"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-76 86 130"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"43 78 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+	}
+	"entities"
+	{
+    "env_fire"
+		{
+			"origin"	"98 84 128"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-112 80 116"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-88 72 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"72 80 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-100 82 80"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"-76 86 130"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+		"env_fire"
+		{
+			"origin"	"43 78 144"
+			"keyvalues"
+			{
+				"damagescale"  "20.0"
+				"spawnflags"   "29"
+				"firesize"     "64"
+			}
+		}
+	}
+}

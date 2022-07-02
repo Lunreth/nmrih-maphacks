@@ -26,7 +26,36 @@
   }
 	"entities"
 	{
-		// LOTS OF MODIFY
+    $edit
+		{
+			"id" "80458"
+			"keyvalues"
+			{
+				"minhealthdmg" "100000"
+			}
+		}
+		$edit
+		{
+			"id" "80478"
+			"keyvalues"
+			{
+				"minhealthdmg" "100000"
+			}
+		}
+		$remove { "id" "80498" }
+		$remove { "id" "80506" }
+		$remove { "id" "80518" }
+		$remove { "id" "80522" }
+		$remove { "id" "80550" }
+		$remove { "id" "80562" }
+		$remove { "id" "80574" }
+		$remove { "id" "80578" }
+		$remove { "id" "80586" }
+		$remove { "id" "80594" }
+		$remove { "id" "80606" }
+		$remove { "id" "81124" }
+		$remove { "id" "125817" }
+		$remove { "id" "125847" }
 		$modify
 		{
       "match"

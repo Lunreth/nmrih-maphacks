@@ -3,7 +3,7 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-	"pre_entities"
+	"entities"
 	{
 		$modify
 		{

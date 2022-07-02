@@ -3,7 +3,7 @@
 {
   "precache"
   {
-    "model"		"models/tmp_mod/island_crate1_2.mdl"
+    "model"		"models/props/vents/vent01h.mdl"
   }
 	"entities"
 	{
@@ -37,9 +37,9 @@
 		"prop_dynamic_override"
 		{
       "targetname"            "prop_ll_block_1"
-      "origin"                "-3672 1376 -146"
-      "angles"                "0 255 0"
-      "model"                 "models/tmp_mod/island_crate1_2.mdl"
+      "origin"                "-3648 1376 -160"
+      "angles"                "0 0 0"
+      "model"                 "models/props/vents/vent01h.mdl"
       "rendermode"            "2"
       "renderamt"             "0"
       "solid"                 "6"

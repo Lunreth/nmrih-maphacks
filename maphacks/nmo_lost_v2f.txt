@@ -1,11 +1,10 @@
-// MapHacks use KeyValues syntax
-// Root key must be named as maphack (case insensitive)
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  // ENTITY EDITOR
 	"entities"
 	{
-		$modify
+    $modify
 		{
 			"match"
 			{

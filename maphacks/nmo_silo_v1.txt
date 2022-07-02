@@ -5,8 +5,6 @@
 {
 	"entities"
 	{
-    $remove { "targetname" "land" }
-		$remove { "targetname" "crushe" }
 		// EDIT ALL PROP PHYSICS
 		$edit_all
 		{
