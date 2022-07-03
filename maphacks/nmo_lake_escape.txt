@@ -1,0 +1,40 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $modify
+		{
+			"match"
+			{
+				"targetname" "objj_l2"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "250 128 0"
+			}
+		}
+  }
+  "entities"
+  {
+    $modify
+		{
+			"match"
+			{
+				"targetname" "objj_l2"
+			}
+			"replace"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "250 128 0"
+			}
+		}
+  }
+}
