@@ -3,32 +3,21 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-  "pre_entities"
-  {
-    $modify
-		{
-			"match"
-			{
-				"targetname" "objj_l2"
-			}
-			"replace"
-			{
-				"glowable"    "1"
-				"glowblip"    "1"
-				"glowdistance"    "9999"
-				"glowcolor"    "250 128 0"
-			}
-		}
-  }
   "entities"
   {
-    $modify
+    $edit
 		{
-			"match"
+			"targetname"	"obj3_radio"
+			"keyvalues"
 			{
-				"targetname" "objj_l2"
+        "GlowEntity2Name"    "objj_l2"
+				"GlowEntity2Color"    "0 0 254"
 			}
-			"replace"
+		}
+    $edit
+		{
+			"targetname"	"objj_l2"
+			"keyvalues"
 			{
 				"glowable"    "1"
 				"glowblip"    "1"
