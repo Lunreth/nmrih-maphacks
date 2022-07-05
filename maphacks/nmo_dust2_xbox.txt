@@ -46,7 +46,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"10"
+				"SpawnFrequency"		"8"
 			}
 		}
   }
@@ -95,7 +95,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"10"
+				"SpawnFrequency"		"8"
 			}
 		}
 		"me_machete"
