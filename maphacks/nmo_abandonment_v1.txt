@@ -5,37 +5,28 @@
 {
 	"entities"
 	{
-		$modify
+    $edit
 		{
-      "match"
+			"id"	"15839"
+			"keyvalues"
 			{
-				"id"  "15839"
-			}
-			"replace"
-			{
-        "solid"     "0"
+        "solid"    "0"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"id"	"15840"
+			"keyvalues"
 			{
-				"id"  "15840"
-			}
-			"replace"
-			{
-        "solid"     "0"
+        "solid"    "0"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"id"	"15991"
+			"keyvalues"
 			{
-				"id"  "15991"
-			}
-			"replace"
-			{
-        "solid"     "0"
+        "solid"    "0"
 			}
 		}
 	}
