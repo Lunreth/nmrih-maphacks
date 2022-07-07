@@ -5,7 +5,8 @@
 {
 	"entities"
 	{
-		// EDIT ALL PROP PHYSICS
+    $remove { "targetname" "gate4" }
+    $remove { "id" "31824" }
 		$edit_all
 		{
 			"classname" "prop_physics"
@@ -15,24 +16,23 @@
 				"physicsmode" "1"
 			}
 		}
-		
-		// MODIFY ALL PROP PHYSICS
-		$modify
+		$edit
 		{
-			"match"
-			{
-				"classname" "prop_physics"
-			}
-			
-			"replace"
-			{
-				"classname"   "prop_physics_multiplayer"
-				"physicsmode" "1"
-			}
-			
+			"targetname" "elev"
 			"keyvalues"
 			{
-        "physicsmode"   "1"
+				"startspeed"	  "0"
+			}
+		}
+		"info_player_nmrih"
+		{
+			"targetname"	"rsp"
+			"origin"	"-895 -224 42"
+			"angles"	"0 0 0"
+			"keyvalues"
+			{
+				"default_spawn"			"0"
+				"spawnflags"        "3"
 			}
 		}
 	}
