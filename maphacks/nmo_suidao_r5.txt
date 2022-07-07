@@ -13,61 +13,41 @@
   }
   "pre_entities"
 	{
-    $modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"id" "2832"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas3"
-        "classname" "prop_dynamic_override"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"id" "2828"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas2"
-        "classname" "prop_dynamic_override"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"id" "2829"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas1"
-        "classname" "prop_dynamic_override"
-			}
-		}
-		$edit_all
+    $remove_connections { "targetname" "FireTrigger3" }
+    $edit_all
 		{
 			"classname" "func_zombie_spawn"
 			"keyvalues"
 			{
-				"spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
+				"spawn_density"       "10.0"
+				"spawn_regen_target"  "1.0"
+			}
+		}
+		$edit
+		{
+			"id" "2832"
+			"keyvalues"
+			{
+				"targetname"  "trailer_gas3"
+				"classname"   "prop_dynamic_override"
+			}
+		}
+		$edit
+		{
+			"id" "2828"
+			"keyvalues"
+			{
+				"targetname"  "trailer_gas2"
+				"classname"   "prop_dynamic_override"
+			}
+		}
+		$edit
+		{
+			"id" "2829"
+			"keyvalues"
+			{
+				"targetname"  "trailer_gas1"
+				"classname"   "prop_dynamic_override"
 			}
 		}
 		$edit_all
@@ -84,63 +64,49 @@
 			"targetname" "head1"
 			"keyvalues"
 			{
-        "origin"     "90,2980,-452"
+        "origin"     "90 2980 -452"
 			}
 		}
 	}
 	"entities"
 	{
-    $modify
+    $edit
 		{
-			"match"
+			"id" "2832"
+			"keyvalues"
 			{
-				"id" "2832"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas3"
-        "classname" "prop_dynamic_override"
+				"targetname"  "trailer_gas3"
+				"classname"   "prop_dynamic_override"
 			}
 		}
-		$modify
+		$edit
 		{
-			"match"
+			"id" "2828"
+			"keyvalues"
 			{
-				"id" "2828"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas2"
-        "classname" "prop_dynamic_override"
+				"targetname"  "trailer_gas2"
+				"classname"   "prop_dynamic_override"
 			}
 		}
-		$modify
+		$edit
 		{
-			"match"
+			"id" "2829"
+			"keyvalues"
 			{
-				"id" "2829"
-			}
-			"replace"
-			{
-        "targetname"  "trailer_gas1"
-        "classname" "prop_dynamic_override"
+				"targetname"  "trailer_gas1"
+				"classname"   "prop_dynamic_override"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"targetname" "o6"
+			"keyvalues"
 			{
-				"classname"   "nmrih_objective_boundary"
-				"targetname"  "o6"
-			}
-			"replace"
-			{
-        "GlowEntity5Name"   "trailer_gas1"
-        "GlowEntity6Name"   "trailer_gas2"
-        "GlowEntity7Name"   "trailer_gas3"
+				"GlowEntity5Name" "trailer_gas1"
+				"GlowEntity6Name" "trailer_gas2"
+				"GlowEntity7Name" "trailer_gas3"
 			}
 		}
-    $remove_connections { "targetname" "FireTrigger3" }
     $edit
     {
         "targetname"  "FireTrigger3"
@@ -156,18 +122,6 @@
             }
         }
     }
-    $modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
-			}
-		}
 		$edit_all
 		{
 			"classname" "func_zombie_spawn"
@@ -191,7 +145,7 @@
 			"targetname" "head1"
 			"keyvalues"
 			{
-        "origin"     "90,2980,-452"
+        "origin"     "90 2980 -452"
 			}
 		}
 	}

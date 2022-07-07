@@ -3,15 +3,12 @@
 {
   "pre_entities"
 	{
-    $modify
+    $edit
 		{
-      "match"
+			"targetname" "obj2B"
+			"keyvalues"
 			{
-				"targetname"  "obj2B"
-			}
-			"replace"
-			{
-        "GlowEntity5Name"   "obj2Bl1"
+				"GlowEntity5Name"   "obj2Bl1"
 				"GlowEntity5Color"  "0 255 0"
 				"GlowEntity6Name"   "obj2Bl2"
 				"GlowEntity6Color"  "0 255 0"
@@ -23,13 +20,10 @@
 				"GlowEntity9Color"  "255 0 0"
 			}
 		}
-		$modify
+		$edit
 		{
-			"match"
-			{
-				"targetname"  "obj2"
-			}
-			"replace"
+			"targetname" "obj2"
+			"keyvalues"
 			{
 				"GlowEntity4Name"   "obj2k1"
 				"GlowEntity4Color"  "0 255 255"
@@ -45,13 +39,10 @@
 				"GlowEntity9Color"  "0 255 255"
 			}
 		}
-		$modify
+		$edit
 		{
-			"match"
-			{
-				"targetname"  "obj10"
-			}
-			"replace"
+			"targetname" "obj10"
+			"keyvalues"
 			{
 				"GlowEntity8Name"   "obj10_cannisterpl"
 				"GlowEntity8Color"  "0 255 255"
@@ -59,15 +50,12 @@
 				"GlowEntity9Color"  "255 255 0"
 			}
 		}
-		$modify
+		$edit
 		{
-			"match"
+			"targetname" "obj7"
+			"keyvalues"
 			{
-				"targetname"  "obj7"
-			}
-			"replace"
-			{
-        "GlowEntity7Name"   "obj7k3"
+				"GlowEntity7Name"   "obj7k3"
 				"GlowEntity7Color"  "255 0 0"
 				"GlowEntity8Name"   "obj7k2"
 				"GlowEntity8Color"  "255 0 0"

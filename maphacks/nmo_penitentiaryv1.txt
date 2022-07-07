@@ -3,27 +3,12 @@
 {
   "pre_entities"
 	{
-    $modify
+    $edit
 		{
-			"match"
+			"targetname" "doorslide2"
+			"keyvalues"
 			{
-				"targetname" "doorslide2"
-			}
-			"replace"
-			{
-        "spawnpos" "0"
-			}
-		}
-    $modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
+				"spawnpos" "0"
 			}
 		}
 		$edit_all
@@ -47,18 +32,6 @@
 			"replace"
 			{
         "spawnpos" "0"
-			}
-		}
-    $modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
 			}
 		}
 		$edit_all

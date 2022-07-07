@@ -5,14 +5,10 @@
 {
 	"entities"
 	{
-		$modify
+    $edit
 		{
-      "match"
-			{
-				"classname"   "nmrih_objective_boundary"
-				"targetname"  "obj_findawayforescape"
-			}
-			"replace"
+			"targetname" "obj_findawayforescape"
+			"keyvalues"
 			{
 				"GlowEntity7Name"   "tnt03"
 				"GlowEntity7Color"  "255 0 0"
@@ -21,46 +17,23 @@
         "GlowEntity9Name"   "tnt01"
 				"GlowEntity9Color"  "255 0 0"
 			}
-			"keyvalues"
-			{
-        "GlowEntity7Name"   "tnt03"
-				"GlowEntity7Color"  "255 0 0"
-				"GlowEntity8Name"   "tnt02"
-				"GlowEntity8Color"  "255 0 0"
-        "GlowEntity9Name"   "tnt01"
-				"GlowEntity9Color"  "255 0 0"
-			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
-			{
-				"classname" "prop_physics"
-			}
-			"replace"
+			"classname" "prop_physics"
+			"keyvalues"
 			{
 				"classname"   "prop_physics_multiplayer"
-				"physicsmode" "1"
-			}
-			"keyvalues"
-			{
-        "physicsmode" "1"
 			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
-			{
-				"classname" "prop_ragdoll"
-			}
-			"replace"
+			"classname" "prop_ragdoll"
+			"keyvalues"
 			{
 				"classname"   "prop_ragdoll_multiplayer"
 			}
 		}
-		
 		$modify
 		{
 			"match"

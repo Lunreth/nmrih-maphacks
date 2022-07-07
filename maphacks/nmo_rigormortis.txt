@@ -14,16 +14,12 @@
   }
   "pre_entities"
 	{
-		$modify
+    $edit
 		{
-      "match"
+			"targetname" "fuel_obj"
+			"keyvalues"
 			{
-				"classname"   "nmrih_objective_boundary"
-				"targetname"  "fuel_obj"
-			}
-			"replace"
-			{
-        "GlowEntity6Name"   "fuel_mdl"
+				"GlowEntity6Name"   "fuel_mdl"
 				"GlowEntity6Color"  "0 128 0"
 				"GlowEntity7Name"   "fuel_mdl"
 				"GlowEntity7Color"  "0 128 0"
@@ -33,29 +29,20 @@
 				"GlowEntity9Color"  "0 128 0"
 			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
+			"classname" "prop_physics"
+			"keyvalues"
 			{
-				"classname" "prop_physics"
-			}
-			"replace"
-			{
-				"classname"   "prop_physics_multiplayer"
-				"physicsmode" "1"
+				"classname"	  "prop_physics_multiplayer"
 			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
+			"classname" "prop_ragdoll"
+			"keyvalues"
 			{
-				"classname"   "prop_ragdoll"
-			}
-			"replace"
-			{
-				"classname"   "prop_ragdoll_multiplayer"
+				"classname"	  "prop_ragdoll_multiplayer"
 			}
 		}
 	}
@@ -80,41 +67,29 @@
 				"GlowEntity9Color"  "0 128 0"
 			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
+			"classname" "prop_physics"
+			"keyvalues"
 			{
-				"classname" "prop_physics"
-			}
-			"replace"
-			{
-				"classname"   "prop_physics_multiplayer"
-				"physicsmode" "1"
+				"classname"	  "prop_physics_multiplayer"
 			}
 		}
-		
-		$modify
+		$edit_all
 		{
-			"match"
+			"classname" "prop_ragdoll"
+			"keyvalues"
 			{
-				"classname"   "prop_ragdoll"
-			}
-			"replace"
-			{
-				"classname"   "prop_ragdoll_multiplayer"
+				"classname"	  "prop_ragdoll_multiplayer"
 			}
 		}
 	}
 	"EventOutput"
 	{
-    $modify
+    $edit_all
 		{
-			"match"
-			{
-				"targetname" "fuel_mdl"
-			}
-			"replace"
+			"targetname" "fuel_mdl"
+			"keyvalues"
 			{
 				"glowable"    "1"
 				"glowblip"    "1"

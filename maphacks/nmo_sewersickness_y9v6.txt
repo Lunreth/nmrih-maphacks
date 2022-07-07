@@ -5,26 +5,12 @@
 {
   "pre_entities"
   {
-		$modify
+    $edit
 		{
-      "match"
+			"targetname" "obj_goahead"
+			"keyvalues"
 			{
-				"targetname"  "door03_tpu01"
-			}
-			"replace"
-			{
-        "spawnflags"   "2"
-			}
-		}
-		$modify
-		{
-      "match"
-			{
-				"targetname"  "obj_goahead"
-			}
-			"replace"
-			{
-        "GlowEntity5Name"   "grenade_ppo01"
+				"GlowEntity5Name"   "grenade_ppo01"
 				"GlowEntity5Color"  "0 255 0"
 				"GlowEntity6Name"   "grenade_ppo02"
 				"GlowEntity6Color"  "0 255 0"
@@ -32,26 +18,28 @@
 				"GlowEntity7Color"  "0 255 0"
 			}
 		}
-		$modify
+    $edit
 		{
-      "match"
+			"targetname" "door03_tpu01"
+			"keyvalues"
 			{
-				"targetname"  "grenade_ppo01_pt01"
-			}
-			"replace"
-			{
-        "spawnflags"   "3"
+				"spawnflags"	  "2"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"targetname" "grenade_ppo01_pt01"
+			"keyvalues"
 			{
-				"targetname"  "door03_tpu02"
+				"spawnflags"	  "3"
 			}
-			"replace"
+		}
+		$edit
+		{
+			"targetname" "door03_tpu02"
+			"keyvalues"
 			{
-        "spawnflags"   "8"
+				"spawnflags"	  "8"
 			}
 		}
 		$edit_all
@@ -70,15 +58,12 @@
 				"spawnflags"	  "8"
 			}
 		}
-		$modify
+		$edit_all
 		{
-			"match"
+			"classname" "func_physbox"
+			"keyvalues"
 			{
-				"classname" "func_physbox"
-			}
-			"replace"
-			{
-				"spawnflags" "16384"
+				"spawnflags"	  "16384"
 			}
 		}
   }

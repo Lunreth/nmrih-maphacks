@@ -24,17 +24,6 @@
 				"spawnflags"  "260"
 			}
 		}
-		$modify
-		{
-      "match"
-			{
-				"parentname"  "fear_tv"
-			}
-			"replace"
-			{
-        "spawnflags" "260"
-			}
-		}
 	}
 	"entities"
 	{

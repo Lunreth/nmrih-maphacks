@@ -6,31 +6,25 @@
   // ENTITY EDITOR
   "pre_entities"
   {
-    $modify
+    $edit_all
 		{
-      "match"
+			"targetname" "random_runner_t"
+			"keyvalues"
 			{
-				"targetname"  "random_runner_t"
-			}
-			"replace"
-			{
-        "Radius"     "16"
-        "SpawnFrequency"  "1"
+				"Radius"          "16"
+				"SpawnFrequency"  "4"
 			}
 		}
   }
 	"entities"
 	{
-		$modify
+		$edit_all
 		{
-      "match"
+			"targetname" "random_runner_t"
+			"keyvalues"
 			{
-				"targetname"  "random_runner_t"
-			}
-			"replace"
-			{
-        "Radius"     "16"
-        "SpawnFrequency"  "1"
+				"Radius"          "16"
+				"SpawnFrequency"  "4"
 			}
 		}
 	}

@@ -14,18 +14,6 @@
 				"spawn_regen_target" "1.0"
 			}
 		}
-		$modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
-			}
-		}
   }
 	"entities"
 	{
@@ -35,18 +23,6 @@
 			"keyvalues"
 			{
 				"spawn_density" "10.0"
-				"spawn_regen_target" "1.0"
-			}
-		}
-		$modify
-		{
-			"match"
-			{
-				"classname" "func_zombie_spawn"
-			}
-			"replace"
-			{
-        "spawn_density" "10.0"
 				"spawn_regen_target" "1.0"
 			}
 		}
