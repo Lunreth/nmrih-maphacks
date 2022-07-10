@@ -3,17 +3,17 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-  "events"
-  {
-		"EventOutput"
-		{
-			"type"	"EVENT_OUTPUT"
-			"targetname"	"fuel_obj"
-			"output"	"OnObjectiveBegin"
-		}
-  }
   "pre_entities"
 	{
+    $edit
+		{
+			"targetname" "obj1_bound"
+			"keyvalues"
+			{
+				"GlowEntity2Name"   "shopdoor_mdl"
+				"GlowEntity2Color"  "254 0 0"
+			}
+		}
     $edit
 		{
 			"targetname" "fuel_obj"
@@ -27,6 +27,25 @@
 				"GlowEntity8Color"  "0 128 0"
         "GlowEntity9Name"   "fuel_mdl"
 				"GlowEntity9Color"  "0 128 0"
+			}
+		}
+		$edit_all
+		{
+			"targetname" "fuel_mdl"
+			"keyvalues"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "0 128 0"
+			}
+		}
+		$edit
+		{
+			"targetname" "fuel_count"
+			"keyvalues"
+			{
+				"max"   "1"
 			}
 		}
 		$edit_all
@@ -48,6 +67,15 @@
 	}
 	"entities"
 	{
+    $edit
+		{
+			"targetname" "obj1_bound"
+			"keyvalues"
+			{
+				"GlowEntity2Name"   "shopdoor_mdl"
+				"GlowEntity2Color"  "254 0 0"
+			}
+		}
 		$modify
 		{
       "match"
@@ -69,6 +97,25 @@
 		}
 		$edit_all
 		{
+			"targetname" "fuel_mdl"
+			"keyvalues"
+			{
+				"glowable"    "1"
+				"glowblip"    "1"
+				"glowdistance"    "9999"
+				"glowcolor"    "0 128 0"
+			}
+		}
+		$edit
+		{
+			"targetname" "fuel_count"
+			"keyvalues"
+			{
+				"max"   "1"
+			}
+		}
+		$edit_all
+		{
 			"classname" "prop_physics"
 			"keyvalues"
 			{
@@ -81,20 +128,6 @@
 			"keyvalues"
 			{
 				"classname"	  "prop_ragdoll_multiplayer"
-			}
-		}
-	}
-	"EventOutput"
-	{
-    $edit_all
-		{
-			"targetname" "fuel_mdl"
-			"keyvalues"
-			{
-				"glowable"    "1"
-				"glowblip"    "1"
-				"glowdistance"    "9999"
-				"glowcolor"    "0 128 0"
 			}
 		}
 	}
