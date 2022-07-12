@@ -6,51 +6,39 @@
   // ENTITY EDITOR
   "pre_entities"
   {
-    $modify
+    $edit
 		{
-      "match"
+			"targetname" "ts_sectape"
+			"keyvalues"
 			{
-				"targetname"  "ts_sectape"
-			}
-			"replace"
-			{
-        "target"     "scp_trainstation_platform_trg1"
+				"target"   "scp_trainstation_platform_trg1"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"targetname" "ts_j_exclude"
+			"keyvalues"
 			{
-				"targetname"  "ts_j_exclude"
-			}
-			"replace"
-			{
-        "target"     "scp_trainstation_platform_trg1"
+				"target"   "scp_trainstation_platform_trg1"
 			}
 		}
   }
 	"entities"
 	{
-		$modify
+		$edit
 		{
-      "match"
+			"targetname" "ts_sectape"
+			"keyvalues"
 			{
-				"targetname"  "ts_sectape"
-			}
-			"replace"
-			{
-        "target"     "scp_trainstation_platform_trg1"
+				"target"   "scp_trainstation_platform_trg1"
 			}
 		}
-		$modify
+		$edit
 		{
-      "match"
+			"targetname" "ts_j_exclude"
+			"keyvalues"
 			{
-				"targetname"  "ts_j_exclude"
-			}
-			"replace"
-			{
-        "target"     "scp_trainstation_platform_trg1"
+				"target"   "scp_trainstation_platform_trg1"
 			}
 		}
 	}

@@ -1,0 +1,50 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $edit_all
+		{
+			"targetname"	"respawn"
+			"keyvalues"
+			{
+				"spawnflags"		"3"
+			}
+		}
+  }
+  "entities"
+  {
+		"me_crowbar"
+		{
+      "origin"  "1280 192 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1280 162 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1240 162 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1240 192 -3130"
+		}
+		"me_pipe_lead"
+		{
+      "origin"  "1280 672 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1240 672 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1280 632 -3130"
+		}
+		"me_wrench"
+		{
+      "origin"  "1240 632 -3130"
+		}
+  }
+}
