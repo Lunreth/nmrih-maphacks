@@ -1,0 +1,61 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "events"
+  {
+		"EventOutput1"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"Power the elevator"
+			"output"	"OnObjectiveBegin"
+		}
+		"EventOutput2"
+		{
+			"type"	"EVENT_OUTPUT"
+			"targetname"	"Power the elevator"
+			"output"	"OnObjectiveEnd"
+		}
+  }
+	"pre_entities"
+	{
+    $edit
+		{
+			"targetname"	"targetname"
+			"keyvalues"
+			{
+        "spawnflags"    "3584"
+			}
+		}
+		$edit
+		{
+			"targetname"	"trigger_elevator"
+			"keyvalues"
+			{
+        "StartDisabled"    "1"
+			}
+		}
+	}
+	"entities"
+	{
+		$edit
+		{
+			"targetname"	"trigger_elevator"
+			"keyvalues"
+			{
+        "StartDisabled"    "1"
+			}
+		}
+	}
+	"EventOutput1"
+	{
+    $fire { "targetname" "button_elev_obj_lock" "input" "Lock" }
+	}
+	"EventOutput2"
+	{
+    $fire { "targetname" "trigger_elevator" "input" "Enable" }
+    $fire { "targetname" "button_elev_obj_lock" "input" "Unlock" }
+    $fire { "targetname" "trigger_elevator" "input" "InputEnable" }
+	}
+}

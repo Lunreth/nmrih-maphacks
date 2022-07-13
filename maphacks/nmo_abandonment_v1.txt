@@ -3,8 +3,83 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "precache"
+  {
+    "model"		"models/props_c17/substation_stripebox01a.mdl"
+  }
+  "pre_entities"
+	{
+		$edit
+		{
+			"targetname"	"obj7A"
+			"keyvalues"
+			{
+        "GlowEntity7Name"    "obj7k1"
+        "GlowEntity7Color"   "254 254 0"
+        "GlowEntity8Name"    "obj7k2"
+        "GlowEntity8Color"   "254 254 0"
+        "GlowEntity9Name"    "obj7k3"
+        "GlowEntity9Color"   "254 254 0"
+        "GlowEntity10Name"    "obj7k4"
+        "GlowEntity10Color"   "254 254 0"
+			}
+		}
+    $edit
+		{
+			"id"	"15839"
+			"keyvalues"
+			{
+        "solid"    "0"
+			}
+		}
+		$edit
+		{
+			"id"	"15840"
+			"keyvalues"
+			{
+        "solid"    "0"
+			}
+		}
+		$edit
+		{
+			"id"	"15991"
+			"keyvalues"
+			{
+        "solid"    "0"
+			}
+		}
+	}
 	"entities"
 	{
+    "prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "832 -312 334"
+      "angles"                "0 0 0"
+      "model"                 "models/props_c17/substation_stripebox01a.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		$edit
+		{
+			"targetname"	"obj7A"
+			"keyvalues"
+			{
+        "GlowEntity7Name"    "obj7k1"
+        "GlowEntity7Color"   "254 254 0"
+        "GlowEntity8Name"    "obj7k2"
+        "GlowEntity8Color"   "254 254 0"
+        "GlowEntity9Name"    "obj7k3"
+        "GlowEntity9Color"   "254 254 0"
+        "GlowEntity10Name"    "obj7k4"
+        "GlowEntity10Color"   "254 254 0"
+			}
+		}
     $edit
 		{
 			"id"	"15839"

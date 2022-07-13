@@ -3,8 +3,9 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
-	"entities"
+	"pre_entities"
   {
+    $remove { "targetname" "2468" }
     $edit_all
 		{
 			"classname" "func_zombie_spawn"
