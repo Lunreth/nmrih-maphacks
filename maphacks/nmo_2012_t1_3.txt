@@ -1,0 +1,80 @@
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "pre_entities"
+  {
+    $edit_all
+		{
+			"classname"	"npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"9"
+			}
+		}
+		$edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+  }
+  "entities"
+  {
+    $edit_all
+		{
+			"classname"	"npc_template_maker"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"9"
+			}
+		}
+		$edit_all
+		{
+			"classname" "func_zombie_spawn"
+			"keyvalues"
+			{
+				"spawn_density" "10.0"
+				"spawn_regen_target" "1.0"
+			}
+		}
+		"me_hatchet"
+		{
+      "origin"  "556 -4000 446"
+		}
+		"me_hatchet"
+		{
+      "origin"  "556 -4000 446"
+		}
+		"me_hatchet"
+		{
+      "origin"  "556 -4000 446"
+		}
+		"me_hatchet"
+		{
+      "origin"  "556 -4000 446"
+		}
+		"me_hatchet"
+		{
+      "origin"  "556 -4000 446"
+		}
+		"me_hatchet"
+		{
+      "origin"  "-6426 -10280 883"
+		}
+		"me_hatchet"
+		{
+      "origin"  "-6426 -10280 883"
+		}
+		"me_hatchet"
+		{
+      "origin"  "-6426 -10280 883"
+		}
+		"me_hatchet"
+		{
+      "origin"  "-6426 -10280 883"
+		}
+  }
+}
