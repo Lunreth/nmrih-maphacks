@@ -8,7 +8,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"9"
+				"SpawnFrequency"		"5"
 			}
 		}
 		$edit_all
@@ -28,7 +28,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"9"
+				"SpawnFrequency"		"5"
 			}
 		}
 		$edit_all

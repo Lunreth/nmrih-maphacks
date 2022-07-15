@@ -8,7 +8,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"9"
+				"SpawnFrequency"		"4"
 			}
 		}
 		$edit_all
@@ -18,6 +18,15 @@
 			{
 				"spawn_density" "10.0"
 				"spawn_regen_target" "1.0"
+			}
+		}
+		$edit
+		{
+			"targetname"	"tunnel_run_make"
+			"keyvalues"
+			{
+        "MaxNPCCount"       "90"
+				"SpawnFrequency"		"1"
 			}
 		}
   }
@@ -28,7 +37,7 @@
 			"classname"	"npc_template_maker"
 			"keyvalues"
 			{
-				"SpawnFrequency"		"9"
+				"SpawnFrequency"		"4"
 			}
 		}
 		$edit_all
@@ -38,6 +47,15 @@
 			{
 				"spawn_density" "10.0"
 				"spawn_regen_target" "1.0"
+			}
+		}
+		$edit
+		{
+			"targetname"	"tunnel_run_make"
+			"keyvalues"
+			{
+        "MaxNPCCount"       "90"
+				"SpawnFrequency"		"1"
 			}
 		}
   }
