@@ -3,6 +3,7 @@
 {
   "pre_entities"
   {
+    $remove { "targetname" "end_run" }
     $edit_all
 		{
 			"classname"	"npc_template_maker"
@@ -39,6 +40,7 @@
   }
   "entities"
   {
+    $remove { "targetname" "end_run" }
     $edit_all
 		{
 			"classname"	"npc_template_maker"
