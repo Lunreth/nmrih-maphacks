@@ -26,7 +26,7 @@
 			"targetname" "mercy2_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "30"
+				"MaxNPCCount" "20"
 			}
 		}
 		$edit
@@ -34,7 +34,7 @@
 			"targetname" "buttonlab_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "50"
+				"MaxNPCCount" "20"
 			}
 		}
   }
@@ -63,7 +63,7 @@
 			"targetname" "mercy2_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "30"
+				"MaxNPCCount" "20"
 			}
 		}
 		$edit
@@ -71,7 +71,7 @@
 			"targetname" "buttonlab_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "50"
+				"MaxNPCCount" "20"
 			}
 		}
 		"me_hatchet"

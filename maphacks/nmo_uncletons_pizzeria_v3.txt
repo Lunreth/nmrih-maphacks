@@ -1,0 +1,38 @@
+// MapHacks use KeyValues syntax
+// Root key must be named as maphack (case insensitive)
+// MapHack by Ulreth* (report any issues)
+"MapHack"
+{
+  "entities"
+  {
+    $remove { "targetname" "intro_door" }
+    $remove { "targetname" "intro_cam_1" }
+		"prop_physics_override"
+    {
+      "origin"      "-3630 -2799 98"
+      "targetname"  "mop"
+      "spawnflags"  "258"
+      "model"       "models/static/nmrih_dustmop.mdl"
+    }
+    "me_machete"
+    {
+      "origin"    "-3625 -2584 100"
+      "angles"    "0 0 90"
+    }
+    "me_machete"
+    {
+      "origin"    "-3625 -2584 100"
+      "angles"    "0 0 90"
+    }
+    "tool_welder"
+    {
+      "origin"    "-3196 -2884 90"
+      "angles"    "0 270 0"
+    }
+    "tool_extinguisher"
+    {
+      "origin"    "-3296 -2146 90"
+      "angles"    "0 180 0"
+    }
+  }
+}

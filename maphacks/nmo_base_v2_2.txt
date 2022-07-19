@@ -25,6 +25,22 @@
         "damage"     "5"
 			}
 		}
+		$edit
+		{
+			"targetname"	"lod_zom_m2"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"3"
+			}
+		}
+		$edit
+		{
+			"targetname"	"lod_zom_m1"
+			"keyvalues"
+			{
+				"SpawnFrequency"		"2"
+			}
+		}
   }
 	"EventOutput"
 	{
