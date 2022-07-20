@@ -7,6 +7,16 @@
   {
     $remove { "targetname" "intro_door" }
     $remove { "targetname" "intro_cam_1" }
+    $edit_all
+		{
+			"classname" "trigger_infect"
+			"keyvalues"
+			{
+				"infect_chance" "1"
+				"damage"        "5"
+				"damagecap"     "5"
+			}
+		}
 		"prop_physics_override"
     {
       "origin"      "-3630 -2799 98"
