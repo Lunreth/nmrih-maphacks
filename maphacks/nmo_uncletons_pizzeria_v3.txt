@@ -17,6 +17,15 @@
 				"damagecap"     "5"
 			}
 		}
+		$edit
+		{
+			"targetname" "cutcheese_filt"
+			"keyvalues"
+			{
+				"damagetype"  "32"
+				"Negated"     "1"
+			}
+		}
 		"prop_physics_override"
     {
       "origin"      "-3630 -2799 98"

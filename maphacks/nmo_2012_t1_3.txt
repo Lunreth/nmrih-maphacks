@@ -26,7 +26,17 @@
 			"targetname" "mercy2_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "20"
+				"MaxNPCCount"     "20"
+				"SpawnFrequency"  "1"
+			}
+		}
+		$edit
+		{
+			"targetname" "cave_run"
+			"keyvalues"
+			{
+				"MaxNPCCount"     "40"
+				"SpawnFrequency"  "1"
 			}
 		}
 		$edit
@@ -34,7 +44,17 @@
 			"targetname" "buttonlab_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "20"
+				"MaxNPCCount"     "20"
+				"SpawnFrequency"  "1"
+			}
+		}
+		$edit
+		{
+			"targetname" "buttonlab_run"
+			"keyvalues"
+			{
+				"MaxNPCCount"     "20"
+				"SpawnFrequency"  "1"
 			}
 		}
   }
@@ -63,7 +83,17 @@
 			"targetname" "mercy2_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "20"
+				"MaxNPCCount"     "20"
+				"SpawnFrequency"  "1"
+			}
+		}
+		$edit
+		{
+			"targetname" "cave_run"
+			"keyvalues"
+			{
+				"MaxNPCCount"     "40"
+				"SpawnFrequency"  "1"
 			}
 		}
 		$edit
@@ -71,7 +101,17 @@
 			"targetname" "buttonlab_run3"
 			"keyvalues"
 			{
-				"MaxNPCCount" "20"
+				"MaxNPCCount"     "40"
+				"SpawnFrequency"  "1"
+			}
+		}
+		$edit
+		{
+			"targetname" "buttonlab_run"
+			"keyvalues"
+			{
+				"MaxNPCCount"     "20"
+				"SpawnFrequency"  "1"
 			}
 		}
 		"me_hatchet"
