@@ -3,8 +3,21 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "precache"
+  {
+    "model"		"models/props_c17/substation_stripebox01a.mdl"
+  }
   "entities"
   {
+    "tool_welder"
+		{
+      "targetname"  "welder_2"
+      "origin"      "3062 -2367 50"
+      "glowable"    "1"
+      "glowblip"    "1"
+      "glowdistance"    "9999"
+      "glowcolor"    "0 255 0"
+		}
     $edit
 		{
 			"targetname"	"obj3_radio"
@@ -12,6 +25,8 @@
 			{
         "GlowEntity2Name"    "objj_l2"
 				"GlowEntity2Color"    "0 0 254"
+				"GlowEntity3Name"    "welder_2"
+				"GlowEntity3Color"    "0 254 0"
 			}
 		}
     $edit
@@ -24,6 +39,62 @@
 				"glowdistance"    "9999"
 				"glowcolor"    "250 128 0"
 			}
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_1"
+      "origin"                "1184 -2912 382"
+      "angles"                "0 0 0"
+      "model"                 "models/props_c17/substation_stripebox01a.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_2"
+      "origin"                "1088 -2912 382"
+      "angles"                "0 0 0"
+      "model"                 "models/props_c17/substation_stripebox01a.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_3"
+      "origin"                "992 -2912 382"
+      "angles"                "0 0 0"
+      "model"                 "models/props_c17/substation_stripebox01a.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
+		}
+		"prop_dynamic_override"
+		{
+      "targetname"            "prop_ll_block_4"
+      "origin"                "896 -2912 382"
+      "angles"                "0 0 0"
+      "model"                 "models/props_c17/substation_stripebox01a.mdl"
+      "rendermode"            "2"
+      "renderamt"             "0"
+      "solid"                 "6"
+      "disableshadows"        "1"
+      "disablereceiveshadows" "1"
+      "fademindist"           "1"
+      "fademaxdist"           "2"
 		}
   }
 }

@@ -26,6 +26,38 @@
 				"Negated"     "1"
 			}
 		}
+		$edit
+		{
+			"targetname" "plunger_mover"
+			"keyvalues"
+			{
+				"speed"  "20"
+			}
+		}
+		$edit
+		{
+			"targetname" "toiletgame_mover_set2"
+			"keyvalues"
+			{
+				"speed"  "25"
+			}
+		}
+		$edit
+		{
+			"targetname" "toiletgame_mover_set1"
+			"keyvalues"
+			{
+				"speed"  "25"
+			}
+		}
+		$edit
+		{
+			"targetname" "toilet_poopcomp"
+			"keyvalues"
+			{
+				"CompareValue"  "3"
+			}
+		}
 		"prop_physics_override"
     {
       "origin"      "-3630 -2799 98"
