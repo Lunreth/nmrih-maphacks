@@ -3,6 +3,33 @@
 // MapHack by Ulreth* (report any issues)
 "MapHack"
 {
+  "pre_entities"
+  {
+    $edit
+		{
+			"targetname" "toiletgame_good"
+			"keyvalues"
+			{
+				"spawnflags"  "49"
+			}
+		}
+		$edit
+		{
+			"targetname" "toiletgame_success"
+			"keyvalues"
+			{
+				"spawnflags"  "49"
+			}
+		}
+		$edit
+		{
+			"targetname" "boiler_sound"
+			"keyvalues"
+			{
+				"spawnflags"  "17"
+			}
+		}
+  }
   "entities"
   {
     $remove { "targetname" "intro_door" }
@@ -52,10 +79,10 @@
 		}
 		$edit
 		{
-			"targetname" "toilet_poopcomp"
+			"targetname" "end_sequence"
 			"keyvalues"
 			{
-				"CompareValue"  "3"
+				"wait"  "-1"
 			}
 		}
 		"prop_physics_override"
